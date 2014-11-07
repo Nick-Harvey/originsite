@@ -1,0 +1,55 @@
+/** Overrides to theme
+	*******************************************************/
+.image_03_parallax{
+	background-image: url("../img/parallax/twirl-full.jpg");
+}
+
+.opacy_bg_02{
+  background:rgba(0, 61, 110, 0.34);
+  text-shadow: 1px 1px 0 rgba(0,0,0,.5);
+   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@media (min-width: 992px) { /*@screen-md-min*/
+	.opacy_bg_02 {
+		padding: 120px 0;
+	}
+}
+
+.opacy_bg_01{
+  background:rgba(0, 61, 110, 0.05);
+}
+
+.nav_logo {
+	background: rgba(17, 17, 17, 0.1);
+}
+
+.index_static h1 {
+	padding-top: 30px
+}
+
+.index_static p {
+	text-align: left;
+	margin: 0;
+}
+
+.nav_logo {
+	position: absolute;
+	bottom: 0;
+}
+
+/** New Styles
+	*******************************************************/
+
+.technology .technology-section {
+	padding: 50px 0;
+}
+
+.technology ul {
+	list-style: none;
+}
+
+
+.logo_tech {
+	width: 300px;
+}
