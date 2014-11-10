@@ -29,7 +29,7 @@ $(document).ready(function($) {
 
 	//=================================== Sticky nav ===================================//
 
-	$(".nav_logo").sticky({topSpacing:0});
+	// $(".nav_logo").sticky({topSpacing:0});
 
 	//=================================== Nav Superfish ===============================//
 

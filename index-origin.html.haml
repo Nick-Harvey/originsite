@@ -32,16 +32,19 @@
     #layout.layout-wide
       / Header Section
       %header.index_static
-        / nav_logo Section
-        / .nav_logo.animated.fadeIn
-        /   .container
-        /     .row
-        /       %nav.col-md-12
-        /         %ul#menu.sf-menu
-        /           %li
-        /             %a{:href => "index.html"} LATEST NEWS
-        /           %li
-        /             %a{:href => "#"} VIDEOS
+        .nav_logo.animated.fadeIn
+          .container
+            .row
+              %nav.col-md-12
+                %ul#menu.sf-menu
+                  %li
+                    %a{:href => "#tech"} TECHNOLOGIES
+                  %li
+                    %a{:href => "#latest"} LATEST NEWS
+                  %li 
+                    %a{:href => '#try'} TRY OPENSHIFT
+                  %li 
+                    %a{:href => '#contribute'} CONTRIBUTE
         %section.content_info
           / Parallax Background
           .bg_parallax.image_03_parallax
@@ -128,7 +131,7 @@
         / End Info resalt
       / End content info - Result Section
       / Info title
-      .row.info_title.wow.fadeInUp
+      #tech.row.info_title.wow.fadeInUp
         .vertical_line
           .circle_bottom
         .info_vertical.animated
@@ -238,7 +241,7 @@
                         %span AUGUST 14, 2014
                 / End Item Service-02
       / Info title
-      .row.info_title.wow.fadeInDown
+      #try.row.info_title.wow.fadeInDown
         %i.fa.fa-download.left
         .vertical_line
           .circle_bottom
@@ -283,7 +286,7 @@
                   %a{:href => "https://www.openshift.com/app/account/new"} sign up for an OpenShift Online account
                   and create your first application in minutes.
       / Info title
-      .row.info_title.wow.fadeInUp
+      #contribute.row.info_title.wow.fadeInUp
         .info_vertical.animated
           %h1
             Contribute to OpenShift
@@ -388,7 +391,7 @@
         .container
           .row
             / Social Section
-            .col-md-2
+            .col-md-3
               %h3 FOLLOW US
               %ul.social
                 %li.facebook
@@ -409,27 +412,10 @@
                   %a{:href => "#"} Linkedin
             / End Social Section
             / Recent links
-            .col-md-2
+            .col-md-3
               %h3 TWITTER FEED
               .twitts
             / End Recent links
-            / Recent Links
-            .col-md-2
-              %h3 RECENT LINKS
-              %ul
-                %li
-                  %i.fa.fa-check
-                  %a{:href => "#"} Work
-                %li
-                  %i.fa.fa-check
-                  %a{:href => "#"} About Us
-                %li
-                  %i.fa.fa-check
-                  %a{:href => "#"} Services
-                %li
-                  %i.fa.fa-check
-                  %a{:href => "#"} Contact Us
-            / End Recent Links
             / Newsletter
             .col-md-3
               %h3 NEWSLETTER SIGN UP
@@ -461,7 +447,7 @@
     %script{:src => "js/nav/tinynav.js", :type => "text/javascript"}
     %script{:src => "js/nav/superfish.js", :type => "text/javascript"}
     %script{:src => "js/nav/hoverIntent.js", :type => "text/javascript"}
-    %script{:src => "js/nav/jquery.sticky.js", :type => "text/javascript"}
+    / %script{:src => "js/nav/jquery.sticky.js", :type => "text/javascript"}
     / Totop
     %script{:src => "js/totop/jquery.ui.totop.js", :type => "text/javascript"}
     / Slide
