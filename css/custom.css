@@ -13,6 +13,18 @@ h2, h3 {
 	font-weight: 300;
 }
 
+.sf-menu {
+	padding-top: 0;
+}
+
+.sf-menu > li > a {
+	width: 120px;
+}
+
+.sf-menu > li > a:hover {
+	font-weight: 500;
+}
+
 .image_03_parallax{
 	background-image: url("../img/parallax/twirl-full.jpg");
 }
@@ -33,7 +45,7 @@ h2, h3 {
 }
 
 .nav_logo {
-	background: rgba(17, 17, 17, 0.1);
+	background-color: rgba(17, 17, 17, 0.1);
 }
 
 .index_static h1 {
@@ -47,7 +59,7 @@ h2, h3 {
 
 .nav_logo {
 	position: absolute;
-	bottom: 0;
+	top: 0;
 }
 
 .delay {
@@ -89,6 +101,18 @@ footer {
 	background-color: #1b2a38;
 }
 
+.social li span {
+	background: transparent;
+}
+
+.social li span i {
+	width: 18px;
+	padding: 4px;
+}
+
+.social li:hover {
+	margin-left: 0;
+} 
 
 @media (min-width: 992px) { /*@screen-md-min*/
 	.opacy_bg_02 {
@@ -117,7 +141,27 @@ footer {
 		height: 100%;
 		opacity: .1;
 	}
+}
 
+@media handheld, only screen and (max-width: 980px) {
+	.tinynav {
+		top: -7px;
+		border-radius: 5px;
+	}
+	.nav_logo {
+		background-color: transparent;
+	}
+}
+
+@media handheld, only screen and (max-width: 767px) {
+	.index_static h1 {
+		font-size: 34px;
+		line-height: normal;
+	}
+	.index_static p {
+		font-size: 21px;
+		line-height: normal;
+	}
 }
 
 
@@ -132,7 +176,6 @@ footer {
 	list-style: none;
 	padding-left: 0;
 }
-
 
 .logo_tech {
 	width: 300px;
