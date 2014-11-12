@@ -1,0 +1,492 @@
+!!!
+%html{:lang => "en"}
+  %head
+    / Basic
+    %meta{:charset => "utf-8"}/
+    %title Origin
+    %meta{:content => "HTML5 Template", :name => "keywords"}/
+    %meta{:content => "Jekas is a Software, Studio and Corporate Responsive Template", :name => "description"}/
+    %meta{:content => "iwthemes.com", :name => "author"}/
+    / Mobile Metas
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+    / Theme CSS
+    %link{:href => "css/style.css", :media => "screen", :rel => "stylesheet"}/
+    / Responsive CSS
+    %link{:href => "css/theme-responsive.css", :media => "screen", :rel => "stylesheet"}/
+    / Skins Theme
+    %link.skin_color{:href => "#", :media => "screen", :rel => "stylesheet"}/
+    
+    %link{:href => "css/custom.css", :media => "screen", :rel => "stylesheet"}/
+
+    / Favicons
+    %link{:href => "img/icons/favicon.ico", :rel => "shortcut icon"}/
+    %link{:href => "img/icons/apple-touch-icon.png", :rel => "apple-touch-icon"}/
+    %link{:href => "img/icons/apple-touch-icon-72x72.png", :rel => "apple-touch-icon", :sizes => "72x72"}/
+    %link{:href => "img/icons/apple-touch-icon-114x114.png", :rel => "apple-touch-icon", :sizes => "114x114"}/
+    /[if IE]
+      <link rel="stylesheet" href="css/ie/ie.css">
+    /[if lte IE 8]
+      <script src="js/responsive/html5shiv.js"></script>
+      <script src="js/responsive/respond.js"></script>
+  %body
+    #layout.layout-wide
+      / Header Section
+      %header.index_static
+        .nav_logo.animated.fadeIn
+          .container
+            .row
+              %nav.col-md-12
+                %ul#menu.sf-menu
+                  %li 
+                    %a{:href => "#try"} TRY OPENSHIFT
+                  %li 
+                    %a{:href => "#contribute"} CONTRIBUTE
+                  %li
+                    %a{:href => "http://openshift.github.io/documentation/"} DOCUMENTATION
+                  %li
+                    %a{:href => "#v3"} WHAT'S COMING NEXT
+        %section.content_info
+          / Parallax Background
+          .bg_parallax.image_03_parallax
+          / Parallax Background
+          / Content Parallax
+          %section.opacy_bg_02.paddings
+            / Info Head Static
+            .container
+              .row
+                .col-md-12
+                  .logo.wow.fadeIn.delay
+                    %a{:href => "index.html", :title => "Back to Home"}
+                      %img.logo_img{:alt => "Logo", :src => "img/origin_logo.svg"}/
+                  / %h1.animated.zoomIn.wow.animated
+                  %h1.animated.fadeInDown.delay
+                    The next generation of PaaS
+                  %p.animated.fadeInUp.delay Is built around the central idea of user applications running in Docker containers, with scheduling and management support provided by the Kubernetes project.
+                / .col-md-4
+                /   %p 
+                /     %a{:href => "#try"} Try OpenShift
+            / End Info Head Static
+          / End Content Parallax
+        / End content info - Parallax Section 02
+      / End Header Section
+      / Info title
+      / .row.info_title.wow.fadeInUp.delay1
+      /   .vertical_line
+      /     .circle_bottom
+      /   .info_vertical.animated
+      /     %h1
+      /       OpenShift is
+      /       incredibly powerful
+      /       and completely 
+      /       = succeed "." do
+      /         %span open source
+      /     %p Now you can build, deploy, and manage your applications with Docker and Kubernetes
+      /   .vertical_line
+      / Try
+      %section.contributions
+        .opacy_bg_03
+          .container
+            .paddings
+              %ul#timeline
+                %li.entry
+                  %label
+                    %span
+                      OpenShift Origin released - the open source project for OpenShift
+                  %span.date April 2012
+                  %span.circle
+                %li.entry
+                  %label
+                    %span
+                      OpenShift Enterprise 1.0 released for general availability
+                  %span.date Nov 2012
+                  %span.circle
+                %li.entry
+                  %label
+                    %span
+                      OpenShift Online - Fully supported public PaaS announced
+                  %span.date June 2013
+                  %span.circle
+                %li.entry
+                  %label
+                    %span
+                      Annoucement of third generation platform (V3)
+                  %span.date Aug 2014
+                  %span.circle
+                %li.entry.spotlight
+                  %label
+                    %span
+                      %a{:href => "#v3"}OpenShift V3 
+                      integrating Docker, Kubernetes, Project Atomic
+                  %span.date Coming 2015
+                  %span.circle.circle-big
+
+      #try.row.info_title.wow.fadeInDown
+        %i.fa.fa-download.right
+        .vertical_line
+          .circle_bottom
+        .info_vertical.animated
+          %h1
+            Try OpenShift
+            %span Origin
+        .padding_bottom
+          .container.wow.fadeInUp
+            .row.text-center
+              .col-xs-12.col-sm-4.col-md-4.col-lg-4
+                %h2 On your network
+                %p 
+                  Want to deploy OpenShift Origin into your network? 
+                  %a{:href => "https://install.openshift.com/"} install.openshift.com 
+                  is your one-stop, one-command deployment utility. Give it a try!
+
+              .col-xs-12.col-sm-4.col-md-4.col-lg-4
+                %h2 On your laptop
+                %p
+                  Want to hit the ground running with a pre-built, all-in-one OpenShift system?
+                  %a{:href => "https://mirror.openshift.com/pub/origin-server/release/4/images/openshift-origin.tgz"} Download an image
+                  suitable for running on a VM. The image will work on
+                  = succeed "," do
+                    %a{:href => "http://www.linux-kvm.org/page/Main_Page"} KVM
+                    %a{:href => "https://www.virtualbox.org/"} VirtualBox
+                  or
+                  = succeed "." do
+                    %a{:href => "http://www.vmware.com/"} VMWare
+                  You can read more about the Origin VM in the
+                  = succeed "." do
+                    %a{:href => "http://openshift.github.io/documentation/oo_deployment_guide_vm.html"} VM Deployment Guide
+                %p
+                  %a{:href => "http://openshift.github.io/documentation/oo_deployment_guide_puppet.html"} You can also build your own machine using Puppet
+                  or
+                  follow the
+                  %a{:href => "http://openshift.github.io/documentation/oo_deployment_guide_comprehensive.html"} comprehensive guide
+                  and deploy OpenShift Origin manually
+              .col-xs-12.col-sm-4.col-md-4.col-lg-4
+                %h2 Online
+                %p
+                  You can try out OpenShift for free with OpenShift Online. Just
+                  %a{:href => "https://www.openshift.com/app/account/new"} sign up for an OpenShift Online account
+                  and create your first application in minutes.
+      / Contribute
+      #contribute.row.info_title.wow.fadeInUp
+        .info_vertical.animated
+          %h1
+            Contribute to OpenShift
+            %span Origin
+          %p We know you've got great ideas for improving OpenShift Origin. So roll up your sleves and come join us in the community.  
+        %i.fa.fa-code.right
+        .paddings
+          .container.wow.fadeInUp
+            .row
+              .col-xs-12.col-sm-6.col-md-6.col-lg-6
+                %h2 Extend OpenShift
+                %p You can add new runtimes and frameworks to OpenShift with community cartridges and quickstarts.
+                %p
+                  Cartridges provide fundamental features on OpenShift such as language runtimes and data layers. Community cartridges are contributed and maintained by the OpenShift community.
+                  %a{:href => "http://openshift.github.io/documentation/"} Read more about building cartridges.
+                %p
+                  Quickstarts are codebases built specifically to run on OpenShift with one or more specific cartridges. A good example of a quickstart is the
+                  = succeed "." do
+                    %a{:href => "https://github.com/openshift/rails-example"} Ruby on Rails quickstart
+                  It already has the appropriate OpenShift environment variables and hooks in place so that you can get started really easily without knowing much specifically about OpenShift. Building a quickstart is pretty easy, and a good place to start extending OpenShift.
+                  %a{:href => "https://openshift.redhat.com/community/developers/get-involved/creating-quickstarts"} Read more about building quickstarts.
+              .col-xs-12.col-sm-6.col-md-6.col-lg-6
+                %h2 Hack on the source code
+                %ul
+                  %li
+                    Fork the
+                    %a{:href => "https://github.com/openshift/origin-server"} origin server
+                    repository.
+                  %li
+                    Read the
+                    = succeed "." do
+                      %a{:href => "https://github.com/openshift/origin-server/blob/master/CONTRIBUTING.md"} contributor's guide
+                  %li
+                    Read the
+                    = succeed "." do
+                      %a{:href => "documentation/"} origin documentation
+                  %li
+                    Check out the public backlogs to see what we're working on:
+                    %ul
+                      %li
+                        %a{:href => "https://trello.com/b/M0rP0aLj"} OpenShift Origin User Interface
+                      %li
+                        %a{:href => "https://trello.com/b/qjfQ62lZ"} OpenShift Origin Runtime
+                      %li
+                        %a{:href => "https://trello.com/b/nbkIrqKa"} OpenShift Origin Broker
+                      %li
+                        %a{:href => "https://trello.com/b/9jLHsM7K"} OpenShift Origin Release Engineering
+                %h3 File a bug
+                %p
+                  Found a bug? Let us know! OpenShift uses a
+                  = succeed "." do
+                    %a{:href => "https://bugzilla.redhat.com/describecomponents.cgi?product=OpenShift%20Origin"} public Bugzilla instance
+                %h3 Talk to us
+                %ul
+                  %li
+                    %a{:href => "http://lists.openshift.redhat.com/openshiftmm/listinfo"} Join the public user or development mailing lists.
+                  %li
+                    %a{:href => "http://webchat.freenode.net/?randomnick=1&channels=openshift-dev&uio=d4"} Join the #openshift-dev channel on Freenode.
+
+      %section.content_info.contributions
+        / Info resalt
+        .opacy_bg_01.paddings
+          .container
+            .row
+              .col-md-12.text-center
+                %h2 
+                  Open Source Contributions
+                %p
+                  It's about upstream collaboration as much as it's about 
+                  %span platform as a service.
+            .row
+              / Left Content
+              .col-md-9.wow.fadeInLeft
+                / Resul Zone
+                .table-responsive
+                  %table.table.contributions
+                    %tr
+                      %th Open Source Project
+                      %th Commits in the last 30 days
+                      %th
+                        Lines of code
+                        %th Merged Pull Requests in the last 30 days
+                        %th Closed issues in the last 30 days
+                        %th Contributors
+                    %tr
+                      %td Origin
+                      %td 176
+                      %td 397,557
+                      %td 93
+                      %td 19
+                      %td 31
+                    %tr
+                      %td Docker
+                      %td ???
+                      %td ???
+                      %td ???
+                      %td ???
+                      %td ???
+                    %tr
+                      %td Kubernetes
+                      %td ???
+                      %td ???
+                      %td ???
+                      %td ???
+                      %td ???
+                    %tr
+                      %td Project Atomic
+                      %td ???
+                      %td ???
+                      %td ???
+                      %td ???
+                      %td ???
+              / End Left Content
+              / Image animation - Right Content
+              .col-md-3.wow.fadeInRight
+                %i.fa.fa-github.right
+              / End Image animation - Right Content
+        / End Info resalt
+      / End content info - Result Section
+      / Info title
+      %section.content_info#v3
+        #tech.row.info_title.wow.fadeInUp
+          %i.fa.fa-cubes.left
+          .vertical_line
+            .circle_bottom
+          .info_vertical.animated
+            %h1
+              Standarization through
+              %span Containerization
+            %p "Standards are powerful forces in the software industry. They can drive technology forward by bringing together the combined efforts of multiple developers, different communities, and even competing vendors."
+          .paddings
+            .container.wow.fadeInUp
+              .row
+                .col-sm-4.col-md-4
+                  .technology-section
+                    .head-tech
+                      %img.logo_tech{:alt => "Docker logo", :src => "img/logo-docker-h.svg"}/
+                    .caption-tech
+                      %h3 Docker container runtime and image model
+                      %ul
+                        %li Standarized portable containers 
+                        %li for any app, any language,
+                        %li using any toolchain. 
+                      %a{:href => "https://www.docker.com/whatisdocker/"} Learn more
+
+                .col-sm-4.col-md-4
+                  .technology-section
+                    .head-tech
+                      %img.logo_tech{:alt => "Kubernetes logo", :src => "img/logo-kubernetes-h.svg"}/
+                    .caption-tech
+                      %h3 Container Orchestration at Scale with Kubernetes.
+                      %ul
+                        %li Providing basic mechanisms for 
+                        %li deployment, maintenance, and scaling
+                        %li of applications 
+                      %a{:href => "https://github.com/GoogleCloudPlatform/kubernetes/blob/master/DESIGN.md"} Learn more
+
+                .col-sm-4.col-md-4
+                  .technology-section
+                    .head-tech
+                      %img.logo_tech{:alt => "Project Atomic logo", :src => "img/logo-atomic-h.svg"}/
+                    .caption-tech
+                      %h3 A lean and mean OS built specifically for containers 
+                      %ul
+                        %li Harnesses the power of upstream packages
+                        %li plus the ability to perform
+                        %li atomic upgrades and rollbacks
+                      %a{:href => "http://www.projectatomic.io/docs/"} Learn more
+                / End Item Service-01
+      %section.content_info.latest-news
+        .opacy_bg_01.paddings
+          .container
+            .row
+              .col-md-12.text-center
+                %h3 What's Coming Next in OpenShift V3
+            .row
+              .col-md-6
+                :plain
+                  <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="//www.youtube.com/v/1hDEe0_sk0o" width="300" height="150"></iframe></div>
+                %p 
+                  Clayton Coleman, engineering lead for OpenShift, and Krish Sumaranian, Director of OpenShift Strategy, talk about what’s coming next in OpenShift V3, how Docker fits into that, and a lot more.
+              .col-md-6
+                / Item Service-02
+                .col-sm-6.col-md-12
+                  .service-02
+                    %h3
+                      %a{:href => "https://blog.openshift.com/openshift-v3-platform-combines-docker-kubernetes-atomic-and-more/"}
+                        OpenShift v3 Platform Combines Docker, Kubernetes, Atomic and More
+                      %span AUGUST 14, 2014
+                / End Item Service-02
+                / Item Service-02
+                .col-sm-6.col-md-12
+                  .service-02
+                    %h3
+                      %a{:href => "https://blog.openshift.com/openshift-v3-deep-dive-docker-kubernetes/"}
+                        OpenShift V3 Deep Dive Tutorial | The Next Generation of PaaS
+                      %span OCTOBER 23, 2014
+                / End Item Service-02
+                / Item Service-02
+                .col-sm-6.col-md-12
+                  .service-02
+                    %h3
+                      %a{:href => "https://blog.openshift.com/openshift-v3-standardizing-container-orchestration-management-kubernetes/"}
+                        OpenShift v3: Standardizing Container Orchestration and Management with Kubernetes
+                      %span OCTOBER 31, 2014
+                / End Item Service-02
+                / Item Service-02
+                .col-sm-6.col-md-12
+                  .service-02
+                    %h3
+                      %a{:href => "https://blog.openshift.com/kubernetes-docker-app-packaging/"}
+                        Podcast: Docker, Kubernetes, and App Packaging with Red Hat’s Mark Lamourine
+                      %span NOVEMBER 4, 2014
+                / End Item Service-02
+
+      %section.content_info
+        %section.paddings
+          .container.wow.fadeInUp
+            .row.text-center
+              .service-process
+                / Step 1
+                .col-xs-12.col-sm-6.col-md-3.col-lg-3
+                  .thumbnail
+                    .caption-head
+                      %em.caption-icon.fa.fa-code.icon-big
+                      %h2.caption-title Develop
+                / End Step 1
+                / Step 2
+                .col-xs-12.col-sm-6.col-md-3.col-lg-3
+                  .thumbnail
+                    .caption-head
+                      %em.caption-icon.fa.fa-cogs.icon-big
+                      %h2.caption-title Build
+                / End Step 2
+                / Step 3
+                .col-xs-12.col-sm-6.col-md-3.col-lg-3
+                  .thumbnail
+                    .caption-head
+                      %em.caption-icon.fa.fa-check-square-o.icon-big
+                      %h2.caption-title Test
+                / End Step 3
+                / Step 4
+                .col-xs-12.col-sm-6.col-md-3.col-lg-3
+                  .thumbnail
+                    .caption-head
+                      %em.caption-icon.fa.fa-cloud-upload.icon-big
+                      %h2.caption-title Deploy
+                / End Step 4
+              .col-md-12.single_services
+                %p.lead
+                  OpenShift v3 is being built around the central idea of user applications running in Docker containers with scheduling/management support provided by the Kubernetes project, and augmented deployment, orchestration, and routing functionality built on top.
+                  %a{:href => "https://blog.openshift.com/openshift-v3-deep-dive-docker-kubernetes/"} Learn More
+        / End Services
+        .vertical_line
+          .circle_top
+      %footer
+        .container
+          .row
+            / Social Section
+            .col-md-6
+              %a{:href => "https://www.redhat.com/"}
+                %img{:alt => "Red Hat", :src => "https://assets.openshift.net/app/assets/redhat.svg"}/
+            .col-md-6
+              %ul.social
+                %li.twitter
+                  %a{:href => "https://twitter.com/openshift"}
+                    %span
+                      %i.fa.fa-twitter-square
+                %li.github
+                  %a{:href => "https://github.com/openshift/origin-server"}
+                    %span
+                      %i.fa.fa-github
+                %li.google
+                  %a{:href => "https://plus.google.com/communities/114361859072744017486"} 
+                    %span
+                      %i.fa.fa-google-plus-square
+                %li.facebook
+                  %a{:href => "https://www.facebook.com/openshift"}
+                    %span
+                      %i.fa.fa-facebook-square
+      / End footer
+      / footer
+    / End layout
+    / ======================= JQuery libs ===========================
+    / jQuery local
+    %script{:src => "js/jquery.js", :type => "text/javascript"}
+    / Nav
+    %script{:src => "js/nav/tinynav.js", :type => "text/javascript"}
+    %script{:src => "js/nav/superfish.js", :type => "text/javascript"}
+    %script{:src => "js/nav/hoverIntent.js", :type => "text/javascript"}
+    / %script{:src => "js/nav/jquery.sticky.js", :type => "text/javascript"}
+    / Totop
+    %script{:src => "js/totop/jquery.ui.totop.js", :type => "text/javascript"}
+    / Slide
+    %script{:src => "js/rs-plugin/js/jquery.themepunch.tools.min.js", :type => "text/javascript"}
+    %script{:src => "js/rs-plugin/js/jquery.themepunch.revolution.min.js", :type => "text/javascript"}
+    / owl-carousel
+    %script{:src => "js/carousel/owl.carousel.js", :type => "text/javascript"}
+    / Ligbox
+    %script{:src => "js/fancybox/jquery.fancybox.pack.js", :type => "text/javascript"}
+    / Gallery Grid
+    %script{:src => "js/gallery/modernizr.custom.26633.js", :type => "text/javascript"}
+    %script{:src => "js/gallery/jquery.gridrotator.js", :type => "text/javascript"}
+    / Minislider Team
+    %script{:src => "js/team/modernizr.custom.63321.js", :type => "text/javascript"}
+    %script{:src => "js/team/jquery.catslider.js", :type => "text/javascript"}
+    / Filters
+    %script{:src => "js/filters/jquery.isotope.js", :type => "text/javascript"}
+    / Theme Options
+    %script{:src => "js/theme-options/theme-options.js", :type => "text/javascript"}
+    %script{:src => "js/theme-options/jquery.cookies.js", :type => "text/javascript"}
+    / Twitter Feed
+    %script{:src => "js/twitter/jquery.tweet.js", :type => "text/javascript"}
+    / WOW-master
+    %script{:src => "js/animations/wow.min.js", :type => "text/javascript"}
+    / Parallax
+    %script{:src => "js/parallax/jquery.inview.js", :type => "text/javascript"}
+    %script{:src => "js/parallax/nbw-parallax.js", :type => "text/javascript"}
+    / Bootstrap.js
+    %script{:src => "js/bootstrap/bootstrap.js", :type => "text/javascript"}
+    / fUNCTIONS
+    %script{:src => "js/main.js", :type => "text/javascript"}
+    / ======================= End JQuery libs ===========================

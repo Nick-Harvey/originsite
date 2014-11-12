@@ -1,0 +1,1177 @@
+!!!
+%html{:lang => "en"}
+  %head
+    / Basic
+    %meta{:charset => "utf-8"}/
+    %title Jekas  - Software, Studio and Corporate Responsive Template
+    %meta{:content => "HTML5 Template", :name => "keywords"}/
+    %meta{:content => "Jekas is a Software, Studio and Corporate Responsive Template", :name => "description"}/
+    %meta{:content => "iwthemes.com", :name => "author"}/
+    / Mobile Metas
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+    / Theme CSS
+    %link{:href => "css/style.css", :media => "screen", :rel => "stylesheet"}/
+    / Responsive CSS
+    %link{:href => "css/theme-responsive.css", :media => "screen", :rel => "stylesheet"}/
+    / Skins Theme
+    %link.skin_color{:href => "#", :media => "screen", :rel => "stylesheet"}/
+    / Favicons
+    %link{:href => "img/icons/favicon.ico", :rel => "shortcut icon"}/
+    %link{:href => "img/icons/apple-touch-icon.png", :rel => "apple-touch-icon"}/
+    %link{:href => "img/icons/apple-touch-icon-72x72.png", :rel => "apple-touch-icon", :sizes => "72x72"}/
+    %link{:href => "img/icons/apple-touch-icon-114x114.png", :rel => "apple-touch-icon", :sizes => "114x114"}/
+    /[if IE]
+      <link rel="stylesheet" href="css/ie/ie.css">
+    /[if lte IE 8]
+      <script src="js/responsive/html5shiv.js"></script>
+      <script src="js/responsive/respond.js"></script>
+  %body
+    / Theme-options
+    #theme-options
+      .openclose
+      .title
+        %span THEME OPTIONS
+        %p Choose a combination of predefined colors here. Here are some examples. You can create any additional number on your backend theme, also can choose the background you want and four differents layouts.
+      %span SKINS VERSION
+      %ul.layout-style
+        %li.light.active Light Skin
+        %li.dark Dark Skin
+      %span SKINS COLOR
+      %ul#colorchanger
+        %li
+          %a.colorbox.red{:href => "?theme=red", :title => "Red Skin"}
+        %li
+          %a.colorbox.blue{:href => "?theme=blue", :title => "Blue Skin"}
+        %li
+          %a.colorbox.yellow{:href => "?theme=yellow", :title => "Yellow Skin"}
+        %li
+          %a.colorbox.green{:href => "?theme=green", :title => "Green Skin"}
+        %li
+          %a.colorbox.orange{:href => "?theme=orange", :title => "Orange Skin"}
+        %li
+          %a.colorbox.purple{:href => "?theme=purple", :title => "Purple Skin"}
+        %li
+          %a.colorbox.pink{:href => "?theme=pink", :title => "Pink Skin"}
+        %li
+          %a.colorbox.cocoa{:href => "?theme=cocoa", :title => "Cocoa Skin"}
+        %li
+          %a.colorbox.suelte{:href => "?theme=suelte", :title => "Suelte Skin"}
+        %li
+          %a.colorbox.grey{:href => "?theme=grey", :title => "grey Skin"}
+      %span LAYOUT STYLE
+      %ul.layout-style
+        %li.wide.active Wide
+        %li.boxed Boxed
+        %li.boxed-margin.full Boxed Margin
+      .patterns
+        %span BACKGROUND PATTERNS
+        %ul.backgrounds
+          %li.bgnone{:title => "None - Default"}
+          %li.bg1
+          %li.bg2
+          %li.bg3
+          %li.bg4
+          %li.bg5
+          %li.bg6
+          %li.bg7
+          %li.bg8
+          %li.bg9
+          %li.bg10
+          %li.bg11
+          %li.bg12
+          %li.bg13
+          %li.bg14
+          %li.bg15
+          %li.bg16
+          %li.bg17
+          %li.bg18
+          %li.bg19
+          %li.bg20
+          %li.bg21
+          %li.bg22
+          %li.bg23
+          %li.bg24
+          %li.bg25
+          %li.bg26
+    / End Theme-options
+    / layout
+    #layout.layout-wide
+      / Header Section
+      %header#home.slide
+        / nav_logo Section
+        .nav_logo.animated.fadeInDown
+          .container
+            .row
+              / Logo
+              .col-md-3.logo
+                %a{:href => "index.html", :title => "Back to Home"}
+                  %img.logo_img{:alt => "Logo", :src => "img/logo.png"}/
+              / End Logo
+              / Nav
+              %nav.col-md-9
+                / Menu
+                %ul#menu.sf-menu
+                  %li
+                    %a{:href => "#home"} HOME
+                    %ul
+                      %li
+                        %a{:href => "index.html"} Creative
+                      %li
+                        %a{:href => "index-corporate.html"} Corporate
+                      %li
+                        %a{:href => "index-business.html"} Business
+                      %li
+                        %a{:href => "index-portfolio.html"} Portfolio
+                      %li.selected
+                        %a{:href => "index-one-page.html"} One Page Theme
+                      %li
+                        %a{:href => "index-landing.html"} Landing Page
+                  %li
+                    %a{:href => "#about"} ABOUT
+                  %li
+                    %a{:href => "#services"} SERVICES
+                  %li
+                    %a{:href => "#portfolio"} WORKS
+                  %li
+                    %a{:href => "#team"} TEAM
+                  %li
+                    %a{:href => "#blog"} BLOG
+                  %li
+                    %a{:href => "#pricing"} PRICING
+                  %li
+                    %a{:href => "#contact"} CONTACT
+                / End Menu
+              / End Nav
+        / End nav_logo Section
+        / Slide Section
+        .tp-banner-container
+          .tp-banner
+            %ul
+              / SLIDE  01
+              %li{"data-masterspeed" => "2500", "data-slotamount" => "7", "data-transition" => "zoomout"}
+                / MAIN IMAGE
+                %img{:alt => "slidebg1", "data-bgfit" => "cover", "data-bgposition" => "left top", "data-bgrepeat" => "no-repeat", :src => "img/slide/slides/3.jpg"}/
+                / LAYER NR. 1
+                .tp-caption.style-caption.large_text.lft.tp-resizeme{"data-easing" => "Power4.easeOut", "data-elementdelay" => "0.1", "data-endelementdelay" => "0.1", "data-endspeed" => "300", "data-speed" => "500", "data-start" => "1200", "data-x" => "16", "data-y" => "80", :style => "z-index: 5; max-width: 700px; line-height: 60px; max-height: auto; white-space: normal;"}
+                  %h1
+                    Design and
+                    = succeed "Development" do
+                      %br/
+                    for
+                    %br/
+                    = succeed "." do
+                      %span iPhone
+                / END LAYER NR. 1
+                / LAYER NR. 2
+                .tp-caption.style-caption.lfb.tp-resizeme{"data-easing" => "Power4.easeOut", "data-elementdelay" => "0.1", "data-endelementdelay" => "0.1", "data-endspeed" => "300", "data-speed" => "500", "data-start" => "1200", "data-x" => "16", "data-y" => "290", :style => "z-index: 3; color: #dedede; max-width: 800px; max-height: auto; white-space: normal;"}
+                  %p Pellentesque habitant morbi tristique senectus et netus et malesuada.
+                / LAYER NR. 3
+                .tp-caption.style-caption.lfb.tp-resizeme{"data-easing" => "Power3.easeInOut", "data-elementdelay" => "0.1", "data-endelementdelay" => "0.1", "data-endspeed" => "300", "data-speed" => "300", "data-splitin" => "none", "data-splitout" => "none", "data-start" => "1400", "data-x" => "20", "data-y" => "400"}
+                  %a.button{:href => "#"}
+                    %span>
+                      %i.fa.fa-link
+                    Details
+                / LAYER NR. 4
+                .tp-caption.style-caption.lfb.tp-resizeme{"data-easing" => "Power3.easeInOut", "data-elementdelay" => "0.1", "data-endelementdelay" => "0.1", "data-endspeed" => "300", "data-speed" => "300", "data-splitin" => "none", "data-splitout" => "none", "data-start" => "1600", "data-x" => "216", "data-y" => "400"}
+                  %a.button{:href => "#"}
+                    %span>
+                      %i.fa.fa-mobile
+                    Buy App
+              / END SLIDE  01
+              / SLIDE  02
+              %li{"data-masterspeed" => "2500", "data-slotamount" => "7", "data-transition" => "zoomout"}
+                / MAIN IMAGE
+                %img{:alt => "slidebg1", "data-bgfit" => "cover", "data-bgposition" => "left top", "data-bgrepeat" => "no-repeat", :src => "img/slide/slides/2.jpg"}/
+                / LAYER NR. 1
+                .tp-caption.style-caption.large_text.lft.tp-resizeme{"data-easing" => "Power4.easeOut", "data-elementdelay" => "0.1", "data-endelementdelay" => "0.1", "data-endspeed" => "300", "data-speed" => "500", "data-start" => "1200", "data-x" => "16", "data-y" => "80", :style => "z-index: 5; max-width: 700px; line-height: 60px; max-height: auto; white-space: normal;"}
+                  %h1
+                    Design and
+                    = succeed "Development" do
+                      %br/
+                    for
+                    %br/
+                    = succeed "." do
+                      %span Android
+                / END LAYER NR. 1
+                / LAYER NR. 2
+                .tp-caption.style-caption.lfb.tp-resizeme{"data-easing" => "Power4.easeOut", "data-elementdelay" => "0.1", "data-endelementdelay" => "0.1", "data-endspeed" => "300", "data-speed" => "500", "data-start" => "1200", "data-x" => "16", "data-y" => "290", :style => "z-index: 3; color: #dedede; max-width: 800px; max-height: auto; white-space: normal;"}
+                  %p Pellentesque habitant morbi tristique senectus et netus et malesuada.
+                / LAYER NR. 3
+                .tp-caption.style-caption.lfb.tp-resizeme{"data-easing" => "Power3.easeInOut", "data-elementdelay" => "0.1", "data-endelementdelay" => "0.1", "data-endspeed" => "300", "data-speed" => "300", "data-splitin" => "none", "data-splitout" => "none", "data-start" => "1400", "data-x" => "20", "data-y" => "400"}
+                  %a.button{:href => "#"}
+                    %span>
+                      %i.fa.fa-link
+                    Details
+                / LAYER NR. 4
+                .tp-caption.style-caption.lfb.tp-resizeme{"data-easing" => "Power3.easeInOut", "data-elementdelay" => "0.1", "data-endelementdelay" => "0.1", "data-endspeed" => "300", "data-speed" => "300", "data-splitin" => "none", "data-splitout" => "none", "data-start" => "1600", "data-x" => "216", "data-y" => "400"}
+                  %a.button{:href => "#"}
+                    %span>
+                      %i.fa.fa-android
+                    Buy App
+              / END SLIDE  02
+              / SLIDE  03
+              %li{"data-masterspeed" => "2500", "data-slotamount" => "7", "data-transition" => "zoomout"}
+                / MAIN IMAGE
+                %img{:alt => "slidebg1", "data-bgfit" => "cover", "data-bgposition" => "left top", "data-bgrepeat" => "no-repeat", :src => "img/slide/slides/1.jpg"}/
+                / LAYER NR. 1
+                .tp-caption.style-caption.large_text.lft.tp-resizeme{"data-easing" => "Power4.easeOut", "data-elementdelay" => "0.1", "data-endelementdelay" => "0.1", "data-endspeed" => "300", "data-speed" => "500", "data-start" => "1200", "data-x" => "16", "data-y" => "80", :style => "z-index: 5; max-width: 700px; line-height: 60px; max-height: auto; white-space: normal;"}
+                  %h1
+                    Design and
+                    = succeed "Development" do
+                      %br/
+                    for
+                    %br/
+                    = succeed "." do
+                      %span Windows
+                / END LAYER NR. 1
+                / LAYER NR. 2
+                .tp-caption.style-caption.lfb.tp-resizeme{"data-easing" => "Power4.easeOut", "data-elementdelay" => "0.1", "data-endelementdelay" => "0.1", "data-endspeed" => "300", "data-speed" => "500", "data-start" => "1200", "data-x" => "16", "data-y" => "290", :style => "z-index: 3; color: #dedede; max-width: 800px; max-height: auto; white-space: normal;"}
+                  %p Pellentesque habitant morbi tristique senectus et netus et malesuada.
+                / LAYER NR. 3
+                .tp-caption.style-caption.lfb.tp-resizeme{"data-easing" => "Power3.easeInOut", "data-elementdelay" => "0.1", "data-endelementdelay" => "0.1", "data-endspeed" => "300", "data-speed" => "300", "data-splitin" => "none", "data-splitout" => "none", "data-start" => "1400", "data-x" => "20", "data-y" => "400"}
+                  %a.button{:href => "#"}
+                    %span>
+                      %i.fa.fa-link
+                    Details
+                / LAYER NR. 4
+                .tp-caption.style-caption.lfb.tp-resizeme{"data-easing" => "Power3.easeInOut", "data-elementdelay" => "0.1", "data-endelementdelay" => "0.1", "data-endspeed" => "300", "data-speed" => "300", "data-splitin" => "none", "data-splitout" => "none", "data-start" => "1600", "data-x" => "216", "data-y" => "400"}
+                  %a.button{:href => "#"}
+                    %span>
+                      %i.fa.fa-windows
+                    Buy App
+              / END SLIDE  03
+        / End Slide Section
+      / End Header Section
+      / Info title About
+      #about.row.info_title.wow.fadeInUp
+        .vertical_line
+          .circle_bottom
+        .info_vertical.animated
+          %h1
+            About
+            = succeed "." do
+              %span Us
+          %p.lead The fastest way to grow your business with the leader in Technology.
+      / End Info title About
+      / End content info - About Us
+      %section.content_info
+        / Info Resalt
+        .paddings
+          .container.wow.fadeInUp
+            .bout-us-image
+              %img.img-responsive{:alt => "", :src => "img/services/4.png"}/
+            .row
+              / Item Service-01
+              .col-sm-6.col-md-4.col-lg-3
+                .service-01
+                  .head-service-01
+                    %i.fa.fa-bullhorn
+                  .caption-service-01
+                    %h3 Branding
+                    %p Lorem ipsum dolor sit amet elit sed do eiusmod tempor incilabore dolore magna aliqua.
+              / End Item Service-01
+              / Item Service-01
+              .col-sm-6.col-md-4.col-lg-3
+                .service-01
+                  .head-service-01
+                    %i.fa.fa-cogs
+                  .caption-service-01
+                    %h3 Web Design
+                    %p Lorem ipsum dolor sit amet elit sed do eiusmod tempor incilabore dolore magna aliqua.
+              / End Item Service-01
+              / Item Service-01
+              .col-sm-6.col-md-4.col-lg-3
+                .service-01
+                  .head-service-01
+                    %i.fa.fa-bolt
+                  .caption-service-01
+                    %h3 Marketing
+                    %p Lorem ipsum dolor sit amet elit sed do eiusmod tempor incilabore dolore magna aliqua.
+              / End Item Service-01
+              / Item Service-01
+              .col-sm-6.col-md-4.col-lg-3
+                .service-01
+                  .head-service-01
+                    %i.fa.fa-camera
+                  .caption-service-01
+                    %h3 Photography
+                    %p Lorem ipsum dolor sit amet elit sed do eiusmod tempor incilabore dolore magna aliqua.
+              / End Item Service-01
+        / End Info Resalt
+      / End content info - About Us
+      / End content info - Parallax Section 01
+      %section.content_info
+        / Parallax Background
+        .bg_parallax.image_01_parallax
+        / Parallax Background
+        / Content Parallax
+        %section.opacy_bg_01.paddings.borders
+          .container.wow.fadeInUp
+            .row.text-center
+              .service-process
+                / Step 1
+                .col-xs-12.col-sm-6.col-md-3.col-lg-3
+                  .thumbnail
+                    .caption-head
+                      %em.caption-icon.fa.fa-graduation-cap.icon-big
+                      %h2.caption-title Imagine
+                / End Step 1
+                / Step 2
+                .col-xs-12.col-sm-6.col-md-3.col-lg-3
+                  .thumbnail
+                    .caption-head
+                      %em.caption-icon.fa.fa-edit.icon-big
+                      %h2.caption-title Strategy
+                / End Step 2
+                / Step 3
+                .col-xs-12.col-sm-6.col-md-3.col-lg-3
+                  .thumbnail
+                    .caption-head
+                      %em.caption-icon.fa.fa-cog.icon-big
+                      %h2.caption-title Build
+                / End Step 3
+                / Step 4
+                .col-xs-12.col-sm-6.col-md-3.col-lg-3
+                  .thumbnail
+                    .caption-head
+                      %em.caption-icon.fa.fa-plane.icon-big
+                      %h2.caption-title Launch
+                / End Step 4
+              .col-md-12.single_services
+                %p.lead
+                  We limit our concurrent projects to ensure your company gets the most care and attention possible.
+                  %a{:href => "#"} Learn More
+        / End Content Parallax
+      / End content info - Parallax Section 01
+      / Info title Services
+      #services.row.info_title.wow.fadeInUp
+        .vertical_line
+          .circle_bottom
+        .info_vertical.animated
+          %h1
+            Why
+            %span Lyke
+            US.
+          %p.lead Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam.
+      / End Info title Services
+      / End content info - Services 01
+      %section.content_info
+        / Info Resalt
+        .paddings
+          .container.wow.fadeInUp
+            .row
+              / Item Service-01
+              .col-sm-6.col-md-4
+                .service-01
+                  .head-service-01
+                    %i.fa.fa-bullhorn
+                  .caption-service-01
+                    %h3 Branding
+                    %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque scelerisque cursus ante ac ullamcorper sed sit amet.
+              / End Item Service-01
+              / Item Service-01
+              .col-sm-6.col-md-4
+                .service-01
+                  .head-service-01
+                    %i.fa.fa-cogs
+                  .caption-service-01
+                    %h3 Web Design
+                    %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque scelerisque cursus ante ac ullamcorper sed sit amet.
+              / End Item Service-01
+              / Item Service-01
+              .col-sm-6.col-md-4
+                .service-01
+                  .head-service-01
+                    %i.fa.fa-bolt
+                  .caption-service-01
+                    %h3 Marketing
+                    %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque scelerisque cursus ante ac ullamcorper sed sit amet.
+              / End Item Service-01
+              / Item Service-01
+              .col-sm-6.col-md-4
+                .service-01
+                  .head-service-01
+                    %i.fa.fa-camera
+                  .caption-service-01
+                    %h3 Photography
+                    %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque scelerisque cursus ante ac ullamcorper sed sit amet.
+              / End Item Service-01
+              / Item Service-01
+              .col-sm-6.col-md-4
+                .service-01
+                  .head-service-01
+                    %i.fa.fa-cubes
+                  .caption-service-01
+                    %h3 Innovation
+                    %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque scelerisque cursus ante ac ullamcorper sed sit amet.
+              / End Item Service-01
+              / Item Service-01
+              .col-sm-6.col-md-4
+                .service-01
+                  .head-service-01
+                    %i.fa.fa-paw
+                  .caption-service-01
+                    %h3 Support
+                    %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque scelerisque cursus ante ac ullamcorper sed sit amet.
+              / End Item Service-01
+        / End Info Resalt
+      / End content info - Services 01
+      / End content info - Parallax Section 02
+      %section.content_info
+        / Parallax Background
+        .bg_parallax.image_02_parallax
+        / Parallax Background
+        / Content Parallax
+        %section.opacy_bg_02.paddings
+          .container.wow.fadeInUp
+            / Resul
+            .row.results.results-no-top
+              .col-md-3
+                %i.fa.fa-bomb
+                %h2
+                  1,000,123
+                  %span +
+                %h5 HOURS WORKED SINCE 2003
+              .col-md-2
+                %i.fa.fa-edit
+                %h2
+                  6,233,954
+                  %span +
+                %h5 LINES OF CODEC
+              .col-md-2
+                %i.fa.fa-group
+                %h2
+                  780
+                  %span +
+                %h5 CLIENTS SERVED
+              .col-md-3
+                %i.fa.fa-coffee
+                %h2
+                  520
+                  %span =
+                %h5 PROJECTS COMPLETED
+              .col-md-2
+                %i.fa.fa-briefcase
+                %h2 18
+                %h5 YEARS OF EXPERIENCE
+            / End Resul
+        / End Content Parallax
+      / End content info - Parallax Section 02
+      / Info title Portfolio
+      #portfolio.row.info_title.wow.fadeInUp
+        .vertical_line
+          .circle_bottom
+        .info_vertical
+          %h1
+            Our
+            %span projects
+            speak well of us.
+          %p Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
+        .vertical_line
+        %i.fa.fa-html5.right
+        %i.fa.fa-css3.left
+      / End Info title Portfolio
+      / End content info - Grey Section- Portfolio
+      %section.content_info
+        / Info Resalt
+        .info_resalt.borders
+          .container
+            / Nav Filters
+            .portfolioFilter
+              %a.current{"data-filter" => "*", :href => "#"} Show All
+              %a{"data-filter" => ".desing", :href => "#desing"} Desing
+              %a{"data-filter" => ".development", :href => "#development"} Development
+              %a{"data-filter" => ".mobile", :href => "#mobile"} Mobile
+              %a{"data-filter" => ".retina", :href => "#retina"} Retina Desing
+            / End Nav Filters
+            / Items Works filters
+            .row.portfolioContainer
+              / Item Work
+              .col-sm-6.col-md-4.desing
+                .item-work
+                  .hover
+                    %img{:alt => "Image", :src => "img/gallery/1.jpg"}/
+                    %a.ligbox-image{:href => "img/gallery/1.jpg", :title => "Image"}/
+                    .overlay
+                  .info
+                    %a{:href => "single-work.html"} Jekas - Creative Template
+                    %i.fa.fa-tablet
+                    %i.fa.fa-desktop
+              / End Item Work
+              / Item Work
+              .col-sm-6.col-md-4.development
+                .item-work
+                  .hover
+                    %img{:alt => "Image", :src => "img/gallery/2.jpg"}/
+                    %a.ligbox-image{:href => "img/gallery/2.jpg", :title => "Image"}/
+                    .overlay
+                  .info
+                    %a{:href => "single-work.html"} Mycv - One Resume Page
+                    %i.fa.fa-tablet
+                    %i.fa.fa-desktop
+              / End Item Work
+              / Item Work
+              .col-sm-6.col-md-4.mobile
+                .item-work
+                  .hover
+                    %img{:alt => "Image", :src => "img/gallery/3.jpg"}/
+                    %a.ligbox-image{:href => "img/gallery/3.jpg", :title => "Image"}/
+                    .overlay
+                  .info
+                    %a{:href => "single-work.html"} Megahost - Hosting Template
+                    %i.fa.fa-tablet
+                    %i.fa.fa-desktop
+              / End Item Work
+              / Item Work
+              .col-sm-6.col-md-4.development
+                .item-work
+                  .hover
+                    %img{:alt => "Image", :src => "img/gallery/4.jpg"}/
+                    %a.ligbox-image{:href => "img/gallery/4.jpg", :title => "Image"}/
+                    .overlay
+                  .info
+                    %a{:href => "single-work.html"} Studio - Landing Page
+                    %i.fa.fa-tablet
+                    %i.fa.fa-desktop
+              / End Item Work
+              / Item Work
+              .col-sm-6.col-md-4.retina
+                .item-work
+                  .hover
+                    %img{:alt => "Image", :src => "img/gallery/5.jpg"}/
+                    %a.ligbox-image{:href => "img/gallery/5.jpg", :title => "Image"}/
+                    .overlay
+                  .info
+                    %a{:href => "single-work.html"} Ebook - Landing Page
+                    %i.fa.fa-tablet
+                    %i.fa.fa-desktop
+              / End Item Work
+              / Item Work
+              .col-sm-6.col-md-4.desing
+                .item-work
+                  .hover
+                    %img{:alt => "Image", :src => "img/gallery/6.jpg"}/
+                    %a.ligbox-image{:href => "img/gallery/6.jpg", :title => "Image"}/
+                    .overlay
+                  .info
+                    %a{:href => "single-work.html"} Gotten - Landing Page
+                    %i.fa.fa-tablet
+                    %i.fa.fa-desktop
+              / End Item Work
+            / End Items Works filters
+        / End Info Resalt
+      / End content info - Grey Section- Portfolio
+      / Info title
+      #team.row-fluid.info_title.wow.fadeInUp
+        .vertical_line
+          .circle_bottom
+        .info_vertical
+          %h1
+            A
+            %span fact
+            worth a thousand words
+          %p “We bring a personal and effective approach to every project we work on, which is why our clients love us and why they keep coming back.”
+        .vertical_line
+        %i.fa.fa-coffee.left
+      / End Info title
+      / Team
+      .info_resalt.borders
+        .container
+          #mi-slider.mi-slider
+            %ul
+              %li
+                %a{:href => "#"}/
+                .radius
+                  %img{:alt => "img01", :src => "img/team/1.jpg"}/
+                %h4 Robbert
+              %li
+                %a{:href => "#"}/
+                .radius
+                  %img{:alt => "img02", :src => "img/team/2.jpg"}/
+                %h4 Georch
+              %li
+                %a{:href => "#"}/
+                .radius
+                  %img{:alt => "img03", :src => "img/team/3.jpg"}/
+                %h4 Erik From
+              %li
+                %a{:href => "#"}/
+                .radius
+                  %img{:alt => "img04", :src => "img/team/4.jpg"}/
+                %h4 Josue
+            %ul
+              %li
+                %a{:href => "#"}/
+                .radius
+                  %img{:alt => "img05", :src => "img/team/5.jpg"}/
+                %h4 Marik
+              %li
+                %a{:href => "#"}/
+                .radius
+                  %img{:alt => "img06", :src => "img/team/6.jpg"}/
+                %h4 Juseo
+              %li
+                %a{:href => "#"}/
+                .radius
+                  %img{:alt => "img07", :src => "img/team/7.jpg"}/
+                %h4 Marisa
+              %li
+                %a{:href => "#"}/
+                .radius
+                  %img{:alt => "img08", :src => "img/team/8.jpg"}/
+                %h4 Fredyrer
+            %ul
+              %li
+                %a{:href => "#"}/
+                .radius
+                  %img{:alt => "img09", :src => "img/team/9.jpg"}/
+                %h4 Kreiytre
+              %li
+                %a{:href => "#"}/
+                .radius
+                  %img{:alt => "img10", :src => "img/team/10.jpg"}/
+                %h4 Luxrtre
+              %li
+                %a{:href => "#"}/
+                .radius
+                  %img{:alt => "img11", :src => "img/team/11.jpg"}/
+                %h4 Frete
+              %li
+                %a{:href => "#"}/
+                .radius
+                  %img{:alt => "img11", :src => "img/team/1.jpg"}/
+                %h4 Frete
+            %ul
+              %li
+                %a{:href => "#"}/
+                .radius
+                  %img{:alt => "img12", :src => "img/team/12.jpg"}/
+                %h4 Carry Tre
+              %li
+                %a{:href => "#"}/
+                .radius
+                  %img{:alt => "img13", :src => "img/team/13.jpg"}/
+                %h4 Jorch
+              %li
+                %a{:href => "#"}/
+                .radius
+                  %img{:alt => "img14", :src => "img/team/14.jpg"}/
+                %h4 Bags yret
+              %li
+                %a{:href => "#"}/
+                .radius
+                  %img{:alt => "img15", :src => "img/team/15.jpg"}/
+                %h4 Juan
+            %nav
+              %a{:href => "#"} Front Ends
+              %a{:href => "#"} Back Ends
+              %a{:href => "#"} Ceo
+              %a{:href => "#"} Support
+      / End Team
+      / Info title Blog
+      #blog.row.info_title.wow.fadeInUp
+        .vertical_line
+          .circle_bottom
+        .info_vertical.animated
+          %h1
+            Latest
+            = succeed "." do
+              %span Blog
+          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam.
+      / End Info title Blog
+      / End content info - Blog 01
+      %section.content_info
+        / Info Resalt
+        .paddings
+          .container.wow.fadeInUp
+            .row
+              / Item Post 01
+              .col-sm-6.col-md-6
+                .blog-content
+                  .entry-header
+                    .blog-image
+                      %img.img-responsive{:alt => "", :src => "img/gallery/1.jpg"}/
+                      .more-link
+                        %a{:href => "#"}
+                          %i.fa.fa-plus
+                    .post-date
+                      %h3
+                        27
+                        %span August
+                  .entry-content
+                    %h3.entry-title
+                      %a{:href => "#"} Adipisicing elit, sed do eiusmod tempor
+                    %ul.entry-meta
+                      %li
+                        %a{:href => "#"}
+                          %i.fa.fa-user
+                          By: Admin
+                          %span /
+                      %li
+                        %a{:href => "#"}
+                          %i.fa.fa-tags
+                          Desing
+                          %span /
+                      %li
+                        %a{:href => "#"}
+                          %i.fa.fa-comments
+                          2 Comments
+                    %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              / End Item Post 01
+              / Item Post 01
+              .col-sm-6.col-md-6
+                .blog-content
+                  .entry-header
+                    .blog-image
+                      %img.img-responsive{:alt => "", :src => "img/gallery/2.jpg"}/
+                      .more-link
+                        %a{:href => "#"}
+                          %i.fa.fa-plus
+                    .post-date
+                      %h3
+                        27
+                        %span August
+                  .entry-content
+                    %h3.entry-title
+                      %a{:href => "#"} Adipisicing elit, sed do eiusmod tempor
+                    %ul.entry-meta
+                      %li
+                        %a{:href => "#"}
+                          %i.fa.fa-user
+                          By: Gama
+                          %span /
+                      %li
+                        %a{:href => "#"}
+                          %i.fa.fa-tags
+                          Photograph
+                          %span /
+                      %li
+                        %a{:href => "#"}
+                          %i.fa.fa-comments
+                          5 Comments
+                    %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              / End Item Post 01
+              / Item Post 01
+              .col-sm-6.col-md-6
+                .blog-content
+                  .entry-header
+                    .blog-image
+                      %img.img-responsive{:alt => "", :src => "img/gallery/3.jpg"}/
+                      .more-link
+                        %a{:href => "#"}
+                          %i.fa.fa-plus
+                    .post-date
+                      %h3
+                        27
+                        %span August
+                  .entry-content
+                    %h3.entry-title
+                      %a{:href => "#"} Adipisicing elit, sed do eiusmod tempor
+                    %ul.entry-meta
+                      %li
+                        %a{:href => "#"}
+                          %i.fa.fa-user
+                          By: Admin
+                          %span /
+                      %li
+                        %a{:href => "#"}
+                          %i.fa.fa-tags
+                          Development
+                          %span /
+                      %li
+                        %a{:href => "#"}
+                          %i.fa.fa-comments
+                          3 Comments
+                    %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              / End Item Post 01
+              / Item Post 01
+              .col-sm-6.col-md-6
+                .blog-content
+                  .entry-header
+                    .blog-image
+                      %img.img-responsive{:alt => "", :src => "img/gallery/4.jpg"}/
+                      .more-link
+                        %a{:href => "#"}
+                          %i.fa.fa-plus
+                    .post-date
+                      %h3
+                        27
+                        %span August
+                  .entry-content
+                    %h3.entry-title
+                      %a{:href => "#"} Adipisicing elit, sed do eiusmod tempor
+                    %ul.entry-meta
+                      %li
+                        %a{:href => "#"}
+                          %i.fa.fa-user
+                          By: Admin
+                          %span /
+                      %li
+                        %a{:href => "#"}
+                          %i.fa.fa-tags
+                          Art
+                          %span /
+                      %li
+                        %a{:href => "#"}
+                          %i.fa.fa-comments
+                          3 Comments
+                    %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              / End Item Post 01
+        / End Info Resalt
+      / End content info - Blog 01
+      / End content info - Video Section
+      %section.content_info
+        / Vide Background
+        %video.bg_video{:autoplay => "autoplay", :loop => "", :muted => "", :preload => "auto"}
+          %source{:src => "img/video/video.mp4", :type => "video/mp4"}
+        / Vide Background
+        / Content Video
+        %section.opacy_bg_03.paddings
+          .container.wow.fadeInUp
+            .row
+              .col-md-12
+                / Sponsors Zone
+                %ul#carousel-sponsors.owl-carousel.carousel-sponsors.tooltip-hover
+                  %li{"data-original-title" => "Name Sponsor", "data-toggle" => "tooltip", :title => ""}
+                    %a.tooltip_hover{:href => "#", :title => "Name Sponsor"}
+                      %img{:alt => "Image", :src => "img/sponsors/1.png"}/
+                  %li{"data-original-title" => "Name Sponsor", "data-toggle" => "tooltip", :title => ""}
+                    %a.tooltip_hover{:href => "#", :title => "Name Sponsor"}
+                      %img{:alt => "Image", :src => "img/sponsors/2.png"}/
+                  %li{"data-original-title" => "Name Sponsor", "data-toggle" => "tooltip", :title => ""}
+                    %a.tooltip_hover{:href => "#", :title => "Name Sponsor"}
+                      %img{:alt => "Image", :src => "img/sponsors/3.png"}/
+                  %li{"data-original-title" => "Name Sponsor", "data-toggle" => "tooltip", :title => ""}
+                    %a.tooltip_hover{:href => "#", :title => "Name Sponsor"}
+                      %img{:alt => "Image", :src => "img/sponsors/4.png"}/
+                  %li{"data-original-title" => "Name Sponsor", "data-toggle" => "tooltip", :title => ""}
+                    %a.tooltip_hover{:href => "#", :title => "Name Sponsor"}
+                      %img{:alt => "Image", :src => "img/sponsors/5.png"}/
+                  %li{"data-original-title" => "Name Sponsor", "data-toggle" => "tooltip", :title => ""}
+                    %a.tooltip_hover{:href => "#", :title => "Name Sponsor"}
+                      %img{:alt => "Image", :src => "img/sponsors/1.png"}/
+                  %li{"data-original-title" => "Name Sponsor", "data-toggle" => "tooltip", :title => ""}
+                    %a.tooltip_hover{:href => "#", :title => "Name Sponsor"}
+                      %img{:alt => "Image", :src => "img/sponsors/2.png"}/
+                  %li{"data-original-title" => "Name Sponsor", "data-toggle" => "tooltip", :title => ""}
+                    %a.tooltip_hover{:href => "#", :title => "Name Sponsor"}
+                      %img{:alt => "Image", :src => "img/sponsors/5.png"}/
+                / End Sponsors Zone
+        / End Content Video
+      / End content info - Video Section
+      / Info title Pricing
+      #pricing.row.info_title.wow.fadeInUp
+        .vertical_line
+          .circle_bottom
+        .info_vertical
+          %h1
+            The
+            %span best
+            promotions.
+          %p Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet ante.
+        .vertical_line
+        %i.fa.fa-gift.left
+      / End Info title Pricing
+      / Tables
+      %section.info_resalt.borders
+        .container
+          .row.padding-top
+            / Item table
+            .col-md-4
+              .item_table
+                .head_table
+                  %h1 ADVANCE
+                  %h2
+                    $ 13,99
+                    %span / Mo
+                  %h5 Or  $ 150.5 Yearly!
+                %ul
+                  %li.color
+                    %i.fa.fa-check>
+                    Styled elements
+                  %li
+                    %i.fa.fa-check>
+                    Advanced admin
+                  %li.color
+                    %i.fa.fa-check>
+                    Up to 10 users
+                  %li
+                    %i.fa.fa-check>
+                    Email Marketing
+                  %li.color
+                    %i.fa.fa-check>
+                    3 Users License
+                %a.button{:href => "#"} Order Now
+            / End Item table
+            / Item table
+            .col-md-4
+              .item_table.promotion_table
+                .head_table
+                  %h1 ADVANCE
+                  %h2
+                    $ 13,99
+                    %span / Mo
+                  %h5 Or  $ 150.5 Yearly!
+                %ul
+                  %li.color
+                    %i.fa.fa-check>
+                    Styled elements
+                  %li
+                    %i.fa.fa-check>
+                    Advanced admin
+                  %li.color
+                    %i.fa.fa-check>
+                    Up to 10 users
+                  %li
+                    %i.fa.fa-check>
+                    Email Marketing
+                  %li.color
+                    %i.fa.fa-check>
+                    3 Users License
+                  %li
+                    %i.fa.fa-check>
+                    Email Support
+                %a.button{:href => "#"} Order Now
+            / End Item table
+            / Item table
+            .col-md-4
+              .item_table
+                .head_table
+                  %h1 ADVANCE
+                  %h2
+                    $ 13,99
+                    %span / Mo
+                  %h5 Or  $ 150.5 Yearly!
+                %ul
+                  %li.color
+                    %i.fa.fa-check>
+                    Styled elements
+                  %li
+                    %i.fa.fa-check>
+                    Advanced admin
+                  %li.color
+                    %i.fa.fa-check>
+                    Up to 10 users
+                  %li
+                    %i.fa.fa-check>
+                    Email Marketing
+                  %li.color
+                    %i.fa.fa-check>
+                    3 Users License
+                %a.button{:href => "#"} Order Now
+            / End Item table
+      / End Tables
+      / End content info - Parallax Section 02
+      %section.content_info
+        / Parallax Background
+        .bg_parallax.image_02_parallax
+        / Parallax Background
+        / Content Parallax
+        %section.opacy_bg_02.paddings
+          / testimonials Carousel
+          %ul#carousel-testimonials.owl-carousel.carousel-testimonials.wow.fadeInUp
+            / Item testimonial
+            %li
+              .head-testimonials
+                .image-testimonials
+                  %img{:alt => "", :src => "img/commnets/1.jpg"}/
+              .name
+                %h3 Jeny Martinez
+              .job
+                %h3 Social Media
+              %p Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+            / End Item testimonial
+            / Item testimonial
+            %li
+              .head-testimonials
+                .image-testimonials
+                  %img{:alt => "", :src => "img/commnets/2.jpg"}/
+              .name
+                %h3 Mager retry
+              .job
+                %h3 Development
+              %p Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+            / End Item testimonial
+            / Item testimonial
+            %li
+              .head-testimonials
+                .image-testimonials
+                  %img{:alt => "", :src => "img/commnets/3.jpg"}/
+              .name
+                %h3 Jertye Falcao
+              .job
+                %h3 Web designer
+              %p Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+            / End Item testimonial
+          / End testimonials Carousel
+        / End Content Parallax
+      / End content info - Parallax Section 02
+      / Info title Pricing
+      #contact.row.info_title.wow.fadeInUp
+        .vertical_line
+          .circle_bottom
+        .info_vertical
+          %h1 Contact Us.
+          %p Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet ante.
+        .vertical_line
+        %i.fa.fa-envelope-o.left
+      / End Info title Pricing
+      / End content info - Grey Section Contact
+      %section.content_info
+        / Info Resalt
+        .info_resalt.border-top
+          .container.wow.fadeInUp
+            .row
+              .col-md-6
+                %h3 Contact Form
+                %form#form{:action => "php/send_mail.php"}
+                  %input{:name => "Name", :placeholder => "Name", :required => "", :type => "text"}/
+                  %input{:name => "Email", :placeholder => "Email", :required => "", :type => "email"}/
+                  %input{:name => "Phone", :placeholder => "Phone", :required => "", :type => "number"}/
+                  %textarea{:name => "message", :placeholder => "Your Message", :required => ""}
+                  %input.button{:name => "Submit", :type => "submit", :value => "Send Message"}/
+                #result
+              .col-md-6
+                %h3 Get in touch
+                %p.lead Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget leo at velit imperdiet varius. In eu ipsum vitae velit congue iaculis vitae at risus.
+                / Map area
+                %section.map_area
+                  %iframe{:src => "https://maps.google.es/maps?f=q&amp;source=s_q&amp;hl=es&amp;geocode=&amp;q=new+york&amp;aq=&amp;sll=40.396764,-3.713379&amp;sspn=9.61761,19.753418&amp;ie=UTF8&amp;hq=&amp;hnear=Nueva+York,+Estados+Unidos&amp;ll=40.614353,-74.005973&amp;spn=0.598524,1.234589&amp;t=m&amp;z=10&amp;output=embed"}
+                / End Map area
+        / End Info Resalt
+      / End content info - Grey Section Contact
+      / footer
+      %footer.footer_top
+        .container
+          .row
+            / Social Section
+            .col-md-2
+              %h3 FOLLOW US
+              %ul.social
+                %li.facebook
+                  %span
+                    %i.fa.fa-facebook
+                  %a{:href => "#"} Facebook
+                %li.twitter
+                  %span
+                    %i.fa.fa-twitter
+                  %a{:href => "#"} Twitter
+                %li.github
+                  %span
+                    %i.fa.fa-github
+                  %a{:href => "#"} Github
+                %li.linkedin
+                  %span
+                    %i.fa.fa-linkedin
+                  %a{:href => "#"} Linkedin
+            / End Social Section
+            / Recent links
+            .col-md-2
+              %h3 TWITTER FEED
+              .twitts
+            / End Recent links
+            / Recent Links
+            .col-md-2
+              %h3 RECENT LINKS
+              %ul
+                %li
+                  %i.fa.fa-check
+                  %a{:href => "#"} Work
+                %li
+                  %i.fa.fa-check
+                  %a{:href => "#"} About Us
+                %li
+                  %i.fa.fa-check
+                  %a{:href => "#"} Services
+                %li
+                  %i.fa.fa-check
+                  %a{:href => "#"} Contact Us
+            / End Recent Links
+            / Newsletter
+            .col-md-3
+              %h3 NEWSLETTER SIGN UP
+              %p Enter your e-mail and subscribe to our newsletter.
+              %form#newsletterForm.newsletterForm{:action => "php/mailchip/newsletter-subscribe.php"}
+                .input-group
+                  %span.input-group-addon
+                    %i.fa.fa-envelope
+                  %input.form-control{:name => "email", :placeholder => "Email Address", :required => "required", :type => "email"}/
+                  %span.input-group-btn
+                    %button.btn.btn-primary{:name => "subscribe", :type => "submit"} Go!
+              #result-newsletter
+            / end Newsletter
+            / Contact Us
+            .col-md-3
+              %h3 CONTACT US
+              %ul.contact_footer
+                %li
+                  %i.fa.fa-envelope
+                  %a{:href => "#"} example@example.com
+                %li
+                  %i.fa.fa-headphones
+                  %a{:href => "#"} 55-5698-4589
+                %li.location
+                  %i.fa.fa-home
+                  %a{:href => "#"} Av new stret - New York
+            / Contact Us
+      / End footer
+      / footer
+      %footer.coopring
+        %p &copy; 2014 Jekas. All Rights Reserved.
+      / End footer
+    / End layout
+    / ======================= JQuery libs ===========================
+    / jQuery local
+    %script{:src => "js/jquery.js", :type => "text/javascript"}
+    / Nav
+    %script{:src => "js/nav/tinynav.js", :type => "text/javascript"}
+    %script{:src => "js/nav/superfish.js", :type => "text/javascript"}
+    %script{:src => "js/nav/hoverIntent.js", :type => "text/javascript"}
+    %script{:src => "js/nav/jquery.sticky.js", :type => "text/javascript"}
+    / Totop
+    %script{:src => "js/totop/jquery.ui.totop.js", :type => "text/javascript"}
+    / Slide
+    %script{:src => "js/rs-plugin/js/jquery.themepunch.tools.min.js", :type => "text/javascript"}
+    %script{:src => "js/rs-plugin/js/jquery.themepunch.revolution.min.js", :type => "text/javascript"}
+    / owl-carousel
+    %script{:src => "js/carousel/owl.carousel.js", :type => "text/javascript"}
+    / Ligbox
+    %script{:src => "js/fancybox/jquery.fancybox.pack.js", :type => "text/javascript"}
+    / Gallery Grid
+    %script{:src => "js/gallery/modernizr.custom.26633.js", :type => "text/javascript"}
+    %script{:src => "js/gallery/jquery.gridrotator.js", :type => "text/javascript"}
+    / Minislider Team
+    %script{:src => "js/team/modernizr.custom.63321.js", :type => "text/javascript"}
+    %script{:src => "js/team/jquery.catslider.js", :type => "text/javascript"}
+    / Filters
+    %script{:src => "js/filters/jquery.isotope.js", :type => "text/javascript"}
+    / Theme Options
+    %script{:src => "js/theme-options/theme-options.js", :type => "text/javascript"}
+    %script{:src => "js/theme-options/jquery.cookies.js", :type => "text/javascript"}
+    / Twitter Feed
+    %script{:src => "js/twitter/jquery.tweet.js", :type => "text/javascript"}
+    / WOW-master
+    %script{:src => "js/animations/wow.min.js", :type => "text/javascript"}
+    / Parallax
+    %script{:src => "js/parallax/jquery.inview.js", :type => "text/javascript"}
+    %script{:src => "js/parallax/nbw-parallax.js", :type => "text/javascript"}
+    / Bootstrap.js
+    %script{:src => "js/bootstrap/bootstrap.js", :type => "text/javascript"}
+    / fUNCTIONS
+    %script{:src => "js/main.js", :type => "text/javascript"}
+    / ======================= End JQuery libs ===========================
+    / Slider Function
+    :javascript
+      jQuery(document).ready(function() {
+         jQuery('.tp-banner').revolution(
+          {
+              delay:15000,
+              startwidth:1170,
+              startheight:500,
+              hideThumbs:10,
+              fullWidth:"on",
+              fullScreen:"on",
+              fullScreenOffsetContainer: ""
+          });
+      });
+    / End Slider Function
