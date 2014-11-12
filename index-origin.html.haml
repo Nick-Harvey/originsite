@@ -61,7 +61,7 @@
                   / %h1.animated.zoomIn.wow.animated
                   %h1.animated.fadeInDown.delay
                     The next generation of PaaS
-                  %p.animated.fadeInUp.delay Built around the central idea of user applications running in Docker containers with scheduling/management support provided by the Kubernetes project, and augmented deployment, orchestration, and routing functionality built on top.
+                  %p.animated.fadeInUp.delay Is built around the central idea of user applications running in Docker containers, with scheduling and management support provided by the Kubernetes project.
                 / .col-md-4
                 /   %p 
                 /     %a{:href => "#try"} Try OpenShift
@@ -133,9 +133,10 @@
             .row.text-center
               .col-xs-12.col-sm-4.col-md-4.col-lg-4
                 %h2 On your network
-                %p Want to deploy OpenShift Origin into your network? 
-                %a{:href => "https://install.openshift.com/"} install.openshift.com 
-                is your one-stop, one-command deployment utility. Give it a try!
+                %p 
+                  Want to deploy OpenShift Origin into your network? 
+                  %a{:href => "https://install.openshift.com/"} install.openshift.com 
+                  is your one-stop, one-command deployment utility. Give it a try!
 
               .col-xs-12.col-sm-4.col-md-4.col-lg-4
                 %h2 On your laptop
@@ -170,7 +171,7 @@
           %h1
             Contribute to OpenShift
             %span Origin
-          %p Join the community and dig in to the code of the open source project on github.  Submit new features and integrations and help us make OpenShift Origin even better.
+          %p We know you've got great ideas for improving OpenShift Origin. So roll up your sleves and come join us in the community.  
         %i.fa.fa-code.right
         .paddings
           .container.wow.fadeInUp
@@ -231,7 +232,11 @@
           .container
             .row
               .col-md-12.text-center
-                %h3 Open Source Contributions
+                %h2 
+                  Open Source Contributions
+                %p
+                  It's about upstream collaboration as much as it's about 
+                  %span platform as a service.
             .row
               / Left Content
               .col-md-9.wow.fadeInLeft
@@ -267,6 +272,13 @@
                       %td ???
                       %td ???
                       %td ???
+                    %tr
+                      %td Project Atomic
+                      %td ???
+                      %td ???
+                      %td ???
+                      %td ???
+                      %td ???
               / End Left Content
               / Image animation - Right Content
               .col-md-3.wow.fadeInRight
@@ -284,7 +296,7 @@
             %h1
               Standarization through
               %span Containerization
-            %p "Standards are powerful forces in the software industry. They can drive technology forward by bringing together the combined efforts of multiple developers, different communities and even competing vendors."
+            %p "Standards are powerful forces in the software industry. They can drive technology forward by bringing together the combined efforts of multiple developers, different communities, and even competing vendors."
           .paddings
             .container.wow.fadeInUp
               .row
@@ -295,10 +307,10 @@
                     .caption-tech
                       %h3 Docker container runtime and image model
                       %ul
-                        %li Dolor sit isque cursus  sed sit amet.
-                        %li Pellentesque scelerisque cursus ante 
-                        %li Lorem ipsum adipiscing elit. 
-                      %a{:href => "#"} Learn more
+                        %li Standarized portable containers 
+                        %li for any app, any language,
+                        %li using any toolchain. 
+                      %a{:href => "https://www.docker.com/whatisdocker/"} Learn more
 
                 .col-sm-4.col-md-4
                   .technology-section
@@ -307,22 +319,22 @@
                     .caption-tech
                       %h3 Container Orchestration at Scale with Kubernetes.
                       %ul
-                        %li Dolor sit isque cursus  sed sit amet.
-                        %li Pellentesque scelerisque cursus ante 
-                        %li Lorem ipsum adipiscing elit. 
-                      %a{:href => "#"} Learn more
+                        %li Providing basic mechanisms for 
+                        %li deployment, maintenance, and scaling
+                        %li of applications 
+                      %a{:href => "https://github.com/GoogleCloudPlatform/kubernetes/blob/master/DESIGN.md"} Learn more
 
                 .col-sm-4.col-md-4
                   .technology-section
                     .head-tech
                       %img.logo_tech{:alt => "Project Atomic logo", :src => "img/logo-atomic-h.svg"}/
                     .caption-tech
-                      %h3 Redefining the way people think about the operating system
+                      %h3 A lean and mean OS built specifically for containers 
                       %ul
-                        %li Dolor sit isque cursus  sed sit amet.
-                        %li Pellentesque scelerisque cursus ante 
-                        %li Lorem ipsum adipiscing elit. 
-                      %a{:href => "#"} Learn more
+                        %li Harnesses the power of upstream packages
+                        %li plus the ability to perform
+                        %li atomic upgrades and rollbacks
+                      %a{:href => "http://www.projectatomic.io/docs/"} Learn more
                 / End Item Service-01
       %section.content_info.latest-news
         .opacy_bg_01.paddings
@@ -341,17 +353,9 @@
                 .col-sm-6.col-md-12
                   .service-02
                     %h3
-                      %a{:href => "https://blog.openshift.com/kubernetes-docker-app-packaging/"}
-                        Podcast: Docker, Kubernetes, and App Packaging with Red Hat’s Mark Lamourine
-                      %span NOVEMBER 4, 2014
-                / End Item Service-02
-                / Item Service-02
-                .col-sm-6.col-md-12
-                  .service-02
-                    %h3
-                      %a{:href => "https://blog.openshift.com/openshift-v3-standardizing-container-orchestration-management-kubernetes/"}
-                        OpenShift v3: Standardizing Container Orchestration and Management with Kubernetes
-                      %span OCTOBER 31, 2014
+                      %a{:href => "https://blog.openshift.com/openshift-v3-platform-combines-docker-kubernetes-atomic-and-more/"}
+                        OpenShift v3 Platform Combines Docker, Kubernetes, Atomic and More
+                      %span AUGUST 14, 2014
                 / End Item Service-02
                 / Item Service-02
                 .col-sm-6.col-md-12
@@ -365,9 +369,17 @@
                 .col-sm-6.col-md-12
                   .service-02
                     %h3
-                      %a{:href => "https://blog.openshift.com/openshift-v3-platform-combines-docker-kubernetes-atomic-and-more/"}
-                        OpenShift v3 Platform Combines Docker, Kubernetes, Atomic and More
-                      %span AUGUST 14, 2014
+                      %a{:href => "https://blog.openshift.com/openshift-v3-standardizing-container-orchestration-management-kubernetes/"}
+                        OpenShift v3: Standardizing Container Orchestration and Management with Kubernetes
+                      %span OCTOBER 31, 2014
+                / End Item Service-02
+                / Item Service-02
+                .col-sm-6.col-md-12
+                  .service-02
+                    %h3
+                      %a{:href => "https://blog.openshift.com/kubernetes-docker-app-packaging/"}
+                        Podcast: Docker, Kubernetes, and App Packaging with Red Hat’s Mark Lamourine
+                      %span NOVEMBER 4, 2014
                 / End Item Service-02
 
       %section.content_info

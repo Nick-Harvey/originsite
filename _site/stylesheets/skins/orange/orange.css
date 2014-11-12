@@ -15,40 +15,39 @@
 .post-date,
 .more-link a,
 .pagination > .active > a{
-	background-color: #DB212F !important;
-	background: #DB212F !important;
+	background-color: #FC4F13 !important;
+	background: #FC4F13 !important;
 }
 .promotion_table .head_table{
-	background-color: #DB212F;
+	background-color: #FC4F13;
 }
 .section_title{
-	background-color: #DB212F;
-	background: #DB212F url("../../../img/img-theme/bg_index_static.png");
+	background-color: #FC4F13;
+	background: #FC4F13 url("../../../img/img-theme/bg_index_static.png");
 }
 .arrow_results{
 	background: url("arrow_results.png") no-repeat center center;
 }
 .overlay{
-	background: #DB212F url("../../../img/img-theme/more.png") no-repeat center center;;
-	background: rgba(230, 75, 60,0.6) url("../../../img/img-theme/more.png") no-repeat center center;
+	background: #FC4F13 url("../../../img/img-theme/more.png") no-repeat center center;;
+	background: rgba(252,79,19,0.6) url("../../../img/img-theme/more.png") no-repeat center center;
 }
 .opacy_bg_03{
-  background: rgba(230, 75, 60,0.6);
+  background: rgba(252,79,19,0.6);
 }
 .progress-bar {
-	background-image: -webkit-linear-gradient(top, #DB212F 0%, #DB212F 100%);
-	background-image: -o-linear-gradient(top, #DB212F 0%, #DB212F 100%);
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#DB212F), to(#DB212F));
-	background-image: linear-gradient(to bottom, #DB212F 0%, #DB212F 100%);
+	background-image: -webkit-linear-gradient(top, #FC4F13 0%, #FC4F13 100%);
+	background-image: -o-linear-gradient(top, #FC4F13 0%, #FC4F13 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#FC4F13), to(#FC4F13));
+	background-image: linear-gradient(to bottom, #FC4F13 0%, #FC4F13 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff428bca', endColorstr='#ff3071a9', GradientType=0);
 	background-repeat: repeat-x;
-	background-color: #DB212F;
+	background-color: #FC4F13;
 }
 
 /* Colors ------------------------*/
 .results h2,
 .style-caption h1 span,
-.color-caption,
 .sf-menu > li > a:hover,
 .portfolioFilter a:hover,
 .portfolioFilter a.current,
@@ -74,16 +73,16 @@ footer li i,
 .info-me h2 strong,
 .list i,
 address i{
-	color: #DB212F !important;
+	color: #FC4F13 !important;
 }
 .index_static h1 span{
-	color: #DB212F;
+	color: #FC4F13;
 }
 
 /* Borders Colors ------------------------*/
 .carousel-testimonials .image-testimonials{
-	border: 5px solid #DB212F;
+	border: 5px solid #FC4F13;
 }
 .carousel-testimonials .head-testimonials:before{
-	border-top: 20px solid #DB212F;
+	border-top: 20px solid #FC4F13;
 }

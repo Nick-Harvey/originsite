@@ -15,40 +15,39 @@
 .post-date,
 .more-link a,
 .pagination > .active > a{
-	background-color: #DB212F !important;
-	background: #DB212F !important;
+	background-color: #000 !important;
+	background: #000 !important;
 }
 .promotion_table .head_table{
-	background-color: #DB212F;
+	background-color: #000;
 }
 .section_title{
-	background-color: #DB212F;
-	background: #DB212F url("../../../img/img-theme/bg_index_static.png");
+	background-color: #000;
+	background: #000 url("../../../img/img-theme/bg_index_static.png");
 }
 .arrow_results{
 	background: url("arrow_results.png") no-repeat center center;
 }
 .overlay{
-	background: #DB212F url("../../../img/img-theme/more.png") no-repeat center center;;
-	background: rgba(230, 75, 60,0.6) url("../../../img/img-theme/more.png") no-repeat center center;
+	background: #000 url("../../../img/img-theme/more.png") no-repeat center center;;
+	background: rgba(0, 0, 0,0.6) url("../../../img/img-theme/more.png") no-repeat center center;
 }
 .opacy_bg_03{
-  background: rgba(230, 75, 60,0.6);
+  background: rgba(0, 0, 0,0.6);
 }
 .progress-bar {
-	background-image: -webkit-linear-gradient(top, #DB212F 0%, #DB212F 100%);
-	background-image: -o-linear-gradient(top, #DB212F 0%, #DB212F 100%);
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#DB212F), to(#DB212F));
-	background-image: linear-gradient(to bottom, #DB212F 0%, #DB212F 100%);
+	background-image: -webkit-linear-gradient(top, #000 0%, #000 100%);
+	background-image: -o-linear-gradient(top, #000 0%, #000 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#000), to(#000));
+	background-image: linear-gradient(to bottom, #000 0%, #000 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff428bca', endColorstr='#ff3071a9', GradientType=0);
 	background-repeat: repeat-x;
-	background-color: #DB212F;
+	background-color: #000;
 }
 
 /* Colors ------------------------*/
 .results h2,
 .style-caption h1 span,
-.color-caption,
 .sf-menu > li > a:hover,
 .portfolioFilter a:hover,
 .portfolioFilter a.current,
@@ -74,16 +73,16 @@ footer li i,
 .info-me h2 strong,
 .list i,
 address i{
-	color: #DB212F !important;
+	color: #000 !important;
 }
 .index_static h1 span{
-	color: #DB212F;
+	color: #000;
 }
 
 /* Borders Colors ------------------------*/
 .carousel-testimonials .image-testimonials{
-	border: 5px solid #DB212F;
+	border: 5px solid #000;
 }
 .carousel-testimonials .head-testimonials:before{
-	border-top: 20px solid #DB212F;
+	border-top: 20px solid #000;
 }
