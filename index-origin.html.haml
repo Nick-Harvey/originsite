@@ -16,7 +16,9 @@
     / Skins Theme
     %link.skin_color{:href => "#", :media => "screen", :rel => "stylesheet"}/
     
-    %link{:href => "css/custom.css", :media => "screen", :rel => "stylesheet"}/
+    %link{:href => "stylesheets/styles.css", :media => "screen", :rel => "stylesheet"}/
+
+    %link{:href => "http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700", :rel => "stylesheet", :type => "text/css"}/
 
     / Favicons
     %link{:href => "img/icons/favicon.ico", :rel => "shortcut icon"}/
@@ -58,32 +60,11 @@
                   .logo.wow.fadeIn.delay
                     %a{:href => "index.html", :title => "Back to Home"}
                       %img.logo_img{:alt => "Logo", :src => "img/origin_logo.svg"}/
-                  / %h1.animated.zoomIn.wow.animated
                   %h1.animated.fadeInDown.delay
                     The next generation of PaaS
                   %p.animated.fadeInUp.delay Is built around the central idea of user applications running in Docker containers, with scheduling and management support provided by the Kubernetes project.
-                / .col-md-4
-                /   %p 
-                /     %a{:href => "#try"} Try OpenShift
-            / End Info Head Static
-          / End Content Parallax
-        / End content info - Parallax Section 02
-      / End Header Section
-      / Info title
-      / .row.info_title.wow.fadeInUp.delay1
-      /   .vertical_line
-      /     .circle_bottom
-      /   .info_vertical.animated
-      /     %h1
-      /       OpenShift is
-      /       incredibly powerful
-      /       and completely 
-      /       = succeed "." do
-      /         %span open source
-      /     %p Now you can build, deploy, and manage your applications with Docker and Kubernetes
-      /   .vertical_line
-      / Try
-      %section.contributions
+      %section.timeline-responsive
+        %section.contributions
         .opacy_bg_03
           .container
             .paddings
@@ -121,7 +102,7 @@
                   %span.circle.circle-big
 
       #try.row.info_title.wow.fadeInDown
-        %i.fa.fa-download.right
+        %i.fa.fa-download.left
         .vertical_line
           .circle_bottom
         .info_vertical.animated
@@ -288,7 +269,7 @@
       / End content info - Result Section
       / Info title
       %section.content_info#v3
-        #tech.row.info_title.wow.fadeInUp
+        .row.info_title.wow.fadeInUp
           %i.fa.fa-cubes.left
           .vertical_line
             .circle_bottom
@@ -383,9 +364,15 @@
                 / End Item Service-02
 
       %section.content_info
-        %section.paddings
+        .row.info_title.wow.fadeInUp
+          .vertical_line
+            .circle_bottom
+          .info_vertical.animated
+            %h1
+              Complete Development
+              %span Workflow
           .container.wow.fadeInUp
-            .row.text-center
+            .row.text-center.padding_bottom
               .service-process
                 / Step 1
                 .col-xs-12.col-sm-6.col-md-3.col-lg-3
@@ -416,12 +403,11 @@
                       %h2.caption-title Deploy
                 / End Step 4
               .col-md-12.single_services
-                %p.lead
+                %p
                   OpenShift v3 is being built around the central idea of user applications running in Docker containers with scheduling/management support provided by the Kubernetes project, and augmented deployment, orchestration, and routing functionality built on top.
                   %a{:href => "https://blog.openshift.com/openshift-v3-deep-dive-docker-kubernetes/"} Learn More
         / End Services
-        .vertical_line
-          .circle_top
+
       %footer
         .container
           .row
