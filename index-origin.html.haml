@@ -3,10 +3,8 @@
   %head
     / Basic
     %meta{:charset => "utf-8"}/
-    %title Origin
-    %meta{:content => "HTML5 Template", :name => "keywords"}/
-    %meta{:content => "Jekas is a Software, Studio and Corporate Responsive Template", :name => "description"}/
-    %meta{:content => "iwthemes.com", :name => "author"}/
+    %title OpenShift Origin - Open Source Platform-as-a-Service
+    %meta{:content => "The next generation open source app hosting platform by Red Hat", :name => "description"}/
     / Mobile Metas
     %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
     / Theme CSS
@@ -21,10 +19,8 @@
     %link{:href => "http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700", :rel => "stylesheet", :type => "text/css"}/
 
     / Favicons
-    %link{:href => "img/icons/favicon.ico", :rel => "shortcut icon"}/
+    %link{:href => "img/icons/favicon.png", :rel => "shortcut icon"}/
     %link{:href => "img/icons/apple-touch-icon.png", :rel => "apple-touch-icon"}/
-    %link{:href => "img/icons/apple-touch-icon-72x72.png", :rel => "apple-touch-icon", :sizes => "72x72"}/
-    %link{:href => "img/icons/apple-touch-icon-114x114.png", :rel => "apple-touch-icon", :sizes => "114x114"}/
     /[if IE]
       <link rel="stylesheet" href="css/ie/ie.css">
     /[if lte IE 8]
@@ -101,7 +97,7 @@
                   %span.date Coming 2015
                   %span.circle.circle-big
 
-      #try.row.info_title.wow.fadeInDown
+      #try.info_title.wow.fadeInDown
         %i.fa.fa-download.left
         .vertical_line
           .circle_bottom
@@ -116,14 +112,14 @@
                 %h2 On your network
                 %p 
                   Want to deploy OpenShift Origin into your network? 
-                  %a{:href => "https://install.openshift.com/"} install.openshift.com 
+                  %a.strong{:href => "https://install.openshift.com/"} install.openshift.com 
                   is your one-stop, one-command deployment utility. Give it a try!
 
               .col-xs-12.col-sm-4.col-md-4.col-lg-4
                 %h2 On your laptop
                 %p
                   Want to hit the ground running with a pre-built, all-in-one OpenShift system?
-                  %a{:href => "https://mirror.openshift.com/pub/origin-server/release/4/images/openshift-origin.tgz"} Download an image
+                  %a.strong{:href => "https://mirror.openshift.com/pub/origin-server/release/4/images/openshift-origin.tgz"} Download an image
                   suitable for running on a VM. The image will work on
                   = succeed "," do
                     %a{:href => "http://www.linux-kvm.org/page/Main_Page"} KVM
@@ -144,10 +140,169 @@
                 %h2 Online
                 %p
                   You can try out OpenShift for free with OpenShift Online. Just
-                  %a{:href => "https://www.openshift.com/app/account/new"} sign up for an OpenShift Online account
+                  %a.strong{:href => "https://www.openshift.com/app/account/new"} sign up for an OpenShift Online account
                   and create your first application in minutes.
-      / Contribute
-      #contribute.row.info_title.wow.fadeInUp
+
+      %section.content_info#v3.latest-news
+        .opacy_bg_01.paddings
+          .container
+            .row
+              .col-md-12.text-center
+                .info_vertical.padding_bottom
+                  %h1
+                    What's coming next in 
+                    %span OpenShift V3
+                  %p
+                    The
+                    %a{:href => "https://github.com/openshift/origin"} source code repo for OpenShift 3
+                    is now available, the first step towards the next version of OpenShift integrating with Docker and the
+                    = succeed "." do
+                      %a{:href => "https://github.com/GoogleCloudPlatform/kubernetes"} Kubernetes container management system
+                    On top of that, OpenShift will bring the developer and admin workflows that are the heart of platform-as-a-service.
+
+            .row
+              .col-md-6
+                :plain
+                  <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="//www.youtube.com/v/1hDEe0_sk0o" width="300" height="150"></iframe></div>
+                %p 
+                  Clayton Coleman, engineering lead for OpenShift, and Krish Sumaranian, Director of OpenShift Strategy, talk about what’s coming next in OpenShift V3, how Docker fits into that, and a lot more.
+              .col-md-6
+                / Item Service-02
+                .col-sm-6.col-md-12
+                  .service-02
+                    %h3
+                      %a{:href => "https://blog.openshift.com/openshift-v3-platform-combines-docker-kubernetes-atomic-and-more/"}
+                        OpenShift v3 Platform Combines Docker, Kubernetes, Atomic and More
+                      %span AUGUST 14, 2014
+                / End Item Service-02
+                / Item Service-02
+                .col-sm-6.col-md-12
+                  .service-02
+                    %h3
+                      %a{:href => "https://blog.openshift.com/openshift-v3-deep-dive-docker-kubernetes/"}
+                        OpenShift V3 Deep Dive Tutorial | The Next Generation of PaaS
+                      %span OCTOBER 23, 2014
+                / End Item Service-02
+                / Item Service-02
+                .col-sm-6.col-md-12
+                  .service-02
+                    %h3
+                      %a{:href => "https://blog.openshift.com/openshift-v3-standardizing-container-orchestration-management-kubernetes/"}
+                        OpenShift v3: Standardizing Container Orchestration and Management with Kubernetes
+                      %span OCTOBER 31, 2014
+                / End Item Service-02
+                / Item Service-02
+                .col-sm-6.col-md-12
+                  .service-02
+                    %h3
+                      %a{:href => "https://blog.openshift.com/kubernetes-docker-app-packaging/"}
+                        Podcast: Docker, Kubernetes, and App Packaging with Red Hat’s Mark Lamourine
+                      %span NOVEMBER 4, 2014
+                / End Item Service-02
+
+      %section.content_info
+        #tech.info_title.wow.fadeInUp
+          %i.fa.fa-cubes.left
+          .vertical_line
+            .circle_bottom
+          .info_vertical.animated
+            %h1
+              Standarization through
+              %span Containerization
+            %p "Standards are powerful forces in the software industry. They can drive technology forward by bringing together the combined efforts of multiple developers, different communities, and even competing vendors."
+          .paddings
+            .container.wow.fadeInUp
+              .row
+                .col-sm-4.col-md-4
+                  .technology-section
+                    .head-tech
+                      %img.logo_tech{:alt => "Docker logo", :src => "img/logo-docker-h.svg"}/
+                    .caption-tech
+                      %h3 Docker container runtime and image model
+                      %p Standarized portable containers for any app, any language, using any toolchain. 
+                      %a{:href => "https://www.docker.com/whatisdocker/"} Learn more
+
+                .col-sm-4.col-md-4
+                  .technology-section
+                    .head-tech
+                      %img.logo_tech{:alt => "Kubernetes logo", :src => "img/logo-kubernetes-h.svg"}/
+                    .caption-tech
+                      %h3 Container Orchestration at Scale with Kubernetes.
+                      %p Providing basic mechanisms for deployment, maintenance, and scaling of applications 
+                      %a{:href => "https://github.com/GoogleCloudPlatform/kubernetes/blob/master/DESIGN.md"} Learn more
+
+                .col-sm-4.col-md-4
+                  .technology-section
+                    .head-tech
+                      %img.logo_tech{:alt => "Project Atomic logo", :src => "img/logo-atomic-h.svg"}/
+                    .caption-tech
+                      %h3 A lean and mean OS built specifically for containers 
+                      %p Harnesses the power of upstream packages plus the ability to perform atomic upgrades and rollbacks
+                      %a{:href => "http://www.projectatomic.io/docs/"} Learn more
+                / End Item Service-01
+      
+      %section.content_info.contributions
+        .opacy_bg_01.paddings
+          .container
+            .row
+              .col-md-12.text-center
+                .info_vertical
+                  %h1 
+                    Open Source 
+                    %span Contributions
+                  %p
+                    It's about upstream collaboration as much as it's about platform as a service.
+            .row
+              / Left Content
+              .col-md-9.wow.fadeInLeft
+                / Resul Zone
+                .table-responsive
+                  %table.table.contributions
+                    %tr
+                      %th Open Source Project
+                      %th Commits in the last 30 days
+                      %th
+                        Lines of code
+                        %th Merged Pull Requests in the last 30 days
+                        %th Closed issues in the last 30 days
+                        %th Contributors
+                    %tr
+                      %td Origin
+                      %td 176
+                      %td 397,557
+                      %td 93
+                      %td 19
+                      %td 31
+                    %tr
+                      %td Docker
+                      %td ???
+                      %td ???
+                      %td ???
+                      %td ???
+                      %td ???
+                    %tr
+                      %td Kubernetes
+                      %td ???
+                      %td ???
+                      %td ???
+                      %td ???
+                      %td ???
+                    %tr
+                      %td Project Atomic
+                      %td ???
+                      %td ???
+                      %td ???
+                      %td ???
+                      %td ???
+              / End Left Content
+              / Image animation - Right Content
+              .col-md-3.wow.fadeInRight
+                %i.fa.fa-github.right
+              / End Image animation - Right Content
+      
+      #contribute.info_title.wow.fadeInUp
+        .vertical_line
+          .circle_bottom
         .info_vertical.animated
           %h1
             Contribute to OpenShift
@@ -207,215 +362,56 @@
                   %li
                     %a{:href => "http://webchat.freenode.net/?randomnick=1&channels=openshift-dev&uio=d4"} Join the #openshift-dev channel on Freenode.
 
-      %section.content_info.contributions
-        / Info resalt
-        .opacy_bg_01.paddings
-          .container
-            .row
-              .col-md-12.text-center
-                %h2 
-                  Open Source Contributions
-                %p
-                  It's about upstream collaboration as much as it's about 
-                  %span platform as a service.
-            .row
-              / Left Content
-              .col-md-9.wow.fadeInLeft
-                / Resul Zone
-                .table-responsive
-                  %table.table.contributions
-                    %tr
-                      %th Open Source Project
-                      %th Commits in the last 30 days
-                      %th
-                        Lines of code
-                        %th Merged Pull Requests in the last 30 days
-                        %th Closed issues in the last 30 days
-                        %th Contributors
-                    %tr
-                      %td Origin
-                      %td 176
-                      %td 397,557
-                      %td 93
-                      %td 19
-                      %td 31
-                    %tr
-                      %td Docker
-                      %td ???
-                      %td ???
-                      %td ???
-                      %td ???
-                      %td ???
-                    %tr
-                      %td Kubernetes
-                      %td ???
-                      %td ???
-                      %td ???
-                      %td ???
-                      %td ???
-                    %tr
-                      %td Project Atomic
-                      %td ???
-                      %td ???
-                      %td ???
-                      %td ???
-                      %td ???
-              / End Left Content
-              / Image animation - Right Content
-              .col-md-3.wow.fadeInRight
-                %i.fa.fa-github.right
-              / End Image animation - Right Content
-        / End Info resalt
-      / End content info - Result Section
-      / Info title
-      %section.content_info#v3
-        .row.info_title.wow.fadeInUp
-          %i.fa.fa-cubes.left
-          .vertical_line
-            .circle_bottom
-          .info_vertical.animated
-            %h1
-              Standarization through
-              %span Containerization
-            %p "Standards are powerful forces in the software industry. They can drive technology forward by bringing together the combined efforts of multiple developers, different communities, and even competing vendors."
-          .paddings
-            .container.wow.fadeInUp
-              .row
-                .col-sm-4.col-md-4
-                  .technology-section
-                    .head-tech
-                      %img.logo_tech{:alt => "Docker logo", :src => "img/logo-docker-h.svg"}/
-                    .caption-tech
-                      %h3 Docker container runtime and image model
-                      %ul
-                        %li Standarized portable containers 
-                        %li for any app, any language,
-                        %li using any toolchain. 
-                      %a{:href => "https://www.docker.com/whatisdocker/"} Learn more
+      
 
-                .col-sm-4.col-md-4
-                  .technology-section
-                    .head-tech
-                      %img.logo_tech{:alt => "Kubernetes logo", :src => "img/logo-kubernetes-h.svg"}/
-                    .caption-tech
-                      %h3 Container Orchestration at Scale with Kubernetes.
-                      %ul
-                        %li Providing basic mechanisms for 
-                        %li deployment, maintenance, and scaling
-                        %li of applications 
-                      %a{:href => "https://github.com/GoogleCloudPlatform/kubernetes/blob/master/DESIGN.md"} Learn more
-
-                .col-sm-4.col-md-4
-                  .technology-section
-                    .head-tech
-                      %img.logo_tech{:alt => "Project Atomic logo", :src => "img/logo-atomic-h.svg"}/
-                    .caption-tech
-                      %h3 A lean and mean OS built specifically for containers 
-                      %ul
-                        %li Harnesses the power of upstream packages
-                        %li plus the ability to perform
-                        %li atomic upgrades and rollbacks
-                      %a{:href => "http://www.projectatomic.io/docs/"} Learn more
-                / End Item Service-01
-      %section.content_info.latest-news
-        .opacy_bg_01.paddings
-          .container
-            .row
-              .col-md-12.text-center
-                %h3 What's Coming Next in OpenShift V3
-            .row
-              .col-md-6
-                :plain
-                  <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="//www.youtube.com/v/1hDEe0_sk0o" width="300" height="150"></iframe></div>
-                %p 
-                  Clayton Coleman, engineering lead for OpenShift, and Krish Sumaranian, Director of OpenShift Strategy, talk about what’s coming next in OpenShift V3, how Docker fits into that, and a lot more.
-              .col-md-6
-                / Item Service-02
-                .col-sm-6.col-md-12
-                  .service-02
-                    %h3
-                      %a{:href => "https://blog.openshift.com/openshift-v3-platform-combines-docker-kubernetes-atomic-and-more/"}
-                        OpenShift v3 Platform Combines Docker, Kubernetes, Atomic and More
-                      %span AUGUST 14, 2014
-                / End Item Service-02
-                / Item Service-02
-                .col-sm-6.col-md-12
-                  .service-02
-                    %h3
-                      %a{:href => "https://blog.openshift.com/openshift-v3-deep-dive-docker-kubernetes/"}
-                        OpenShift V3 Deep Dive Tutorial | The Next Generation of PaaS
-                      %span OCTOBER 23, 2014
-                / End Item Service-02
-                / Item Service-02
-                .col-sm-6.col-md-12
-                  .service-02
-                    %h3
-                      %a{:href => "https://blog.openshift.com/openshift-v3-standardizing-container-orchestration-management-kubernetes/"}
-                        OpenShift v3: Standardizing Container Orchestration and Management with Kubernetes
-                      %span OCTOBER 31, 2014
-                / End Item Service-02
-                / Item Service-02
-                .col-sm-6.col-md-12
-                  .service-02
-                    %h3
-                      %a{:href => "https://blog.openshift.com/kubernetes-docker-app-packaging/"}
-                        Podcast: Docker, Kubernetes, and App Packaging with Red Hat’s Mark Lamourine
-                      %span NOVEMBER 4, 2014
-                / End Item Service-02
-
-      %section.content_info
-        .row.info_title.wow.fadeInUp
-          .vertical_line
-            .circle_bottom
-          .info_vertical.animated
-            %h1
-              Complete Development
-              %span Workflow
-          .container.wow.fadeInUp
-            .row.text-center.padding_bottom
-              .service-process
-                / Step 1
-                .col-xs-12.col-sm-6.col-md-3.col-lg-3
-                  .thumbnail
-                    .caption-head
-                      %em.caption-icon.fa.fa-code.icon-big
-                      %h2.caption-title Develop
-                / End Step 1
-                / Step 2
-                .col-xs-12.col-sm-6.col-md-3.col-lg-3
-                  .thumbnail
-                    .caption-head
-                      %em.caption-icon.fa.fa-cogs.icon-big
-                      %h2.caption-title Build
-                / End Step 2
-                / Step 3
-                .col-xs-12.col-sm-6.col-md-3.col-lg-3
-                  .thumbnail
-                    .caption-head
-                      %em.caption-icon.fa.fa-check-square-o.icon-big
-                      %h2.caption-title Test
-                / End Step 3
-                / Step 4
-                .col-xs-12.col-sm-6.col-md-3.col-lg-3
-                  .thumbnail
-                    .caption-head
-                      %em.caption-icon.fa.fa-cloud-upload.icon-big
-                      %h2.caption-title Deploy
-                / End Step 4
-              .col-md-12.single_services
-                %p
-                  OpenShift v3 is being built around the central idea of user applications running in Docker containers with scheduling/management support provided by the Kubernetes project, and augmented deployment, orchestration, and routing functionality built on top.
-                  %a{:href => "https://blog.openshift.com/openshift-v3-deep-dive-docker-kubernetes/"} Learn More
-        / End Services
+      / %section.content_info
+      /   .row.info_title.wow.fadeInUp
+      /     .vertical_line
+      /       .circle_bottom
+      /     .info_vertical.animated
+      /       %h1
+      /         Complete Development
+      /         %span Workflow
+      /     .container.wow.fadeInUp
+      /       .row.text-center.padding_bottom
+      /         .service-process
+      /           / Step 1
+      /           .col-xs-12.col-sm-6.col-md-3.col-lg-3
+      /             .thumbnail
+      /               .caption-head
+      /                 %em.caption-icon.fa.fa-code.icon-big
+      /                 %h2.caption-title Develop
+      /           / End Step 1
+      /           / Step 2
+      /           .col-xs-12.col-sm-6.col-md-3.col-lg-3
+      /             .thumbnail
+      /               .caption-head
+      /                 %em.caption-icon.fa.fa-cogs.icon-big
+      /                 %h2.caption-title Build
+      /           / End Step 2
+      /           / Step 3
+      /           .col-xs-12.col-sm-6.col-md-3.col-lg-3
+      /             .thumbnail
+      /               .caption-head
+      /                 %em.caption-icon.fa.fa-check-square-o.icon-big
+      /                 %h2.caption-title Test
+      /           / End Step 3
+      /           / Step 4
+      /           .col-xs-12.col-sm-6.col-md-3.col-lg-3
+      /             .thumbnail
+      /               .caption-head
+      /                 %em.caption-icon.fa.fa-cloud-upload.icon-big
+      /                 %h2.caption-title Deploy
+      /           / End Step 4
 
       %footer
         .container
           .row
             / Social Section
-            .col-md-6
+            .col-md-6.col-sm-12
               %a{:href => "https://www.redhat.com/"}
                 %img{:alt => "Red Hat", :src => "https://assets.openshift.net/app/assets/redhat.svg"}/
-            .col-md-6
+            .col-md-6.col-sm-12
               %ul.social
                 %li.twitter
                   %a{:href => "https://twitter.com/openshift"}
