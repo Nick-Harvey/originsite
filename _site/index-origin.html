@@ -3,10 +3,8 @@
   <head>
     <!-- Basic -->
     <meta charset="utf-8">
-    <title>Origin</title>
-    <meta content="HTML5 Template" name="keywords">
-    <meta content="Jekas is a Software, Studio and Corporate Responsive Template" name="description">
-    <meta content="iwthemes.com" name="author">
+    <title>OpenShift Origin - Open Source Platform-as-a-Service</title>
+    <meta content="The next generation open source app hosting platform by Red Hat" name="description">
     <!-- Mobile Metas -->
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <!-- Theme CSS -->
@@ -15,12 +13,11 @@
     <link href="css/theme-responsive.css" media="screen" rel="stylesheet">
     <!-- Skins Theme -->
     <link class="skin_color" href="#" media="screen" rel="stylesheet">
-    <link href="css/custom.css" media="screen" rel="stylesheet">
+    <link href="stylesheets/styles.css" media="screen" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700" rel="stylesheet" type="text/css">
     <!-- Favicons -->
-    <link href="img/icons/favicon.ico" rel="shortcut icon">
+    <link href="img/icons/favicon.png" rel="shortcut icon">
     <link href="img/icons/apple-touch-icon.png" rel="apple-touch-icon">
-    <link href="img/icons/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
-    <link href="img/icons/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
     <!--[if IE]>
       <link rel="stylesheet" href="css/ie/ie.css">
     <![endif]-->
@@ -70,39 +67,18 @@
                       <img alt="Logo" class="logo_img" src="img/origin_logo.svg">
                     </a>
                   </div>
-                  <!-- %h1.animated.zoomIn.wow.animated -->
                   <h1 class="animated fadeInDown delay">
-                    The next generation of PaaS
+                    Establishing the next generation of PaaS
                   </h1>
-                  <p class="animated fadeInUp delay">Is built around the central idea of user applications running in Docker containers, with scheduling and management support provided by the Kubernetes project.</p>
+                  <p class="animated fadeInUp delay">OpenShift v3 is built around a core of application containers powered by Docker, with orchestration and management provided by Kubernetes, on a foundation of Atomic and Enterprise Linux.  Origin is the community project that brings it all together with extensions to accelerate application development and deployment.</p>
                 </div>
-                <!-- .col-md-4 -->
-                <!-- %p -->
-                <!-- %a{:href => "#try"} Try OpenShift -->
               </div>
             </div>
-            <!-- End Info Head Static -->
           </section>
-          <!-- End Content Parallax -->
         </section>
-        <!-- End content info - Parallax Section 02 -->
       </header>
-      <!-- End Header Section -->
-      <!-- Info title -->
-      <!-- .row.info_title.wow.fadeInUp.delay1 -->
-      <!-- .vertical_line -->
-      <!-- .circle_bottom -->
-      <!-- .info_vertical.animated -->
-      <!-- %h1 -->
-      <!-- OpenShift is -->
-      <!-- incredibly powerful -->
-      <!-- and completely -->
-      <!-- = succeed "." do -->
-      <!-- %span open source -->
-      <!-- %p Now you can build, deploy, and manage your applications with Docker and Kubernetes -->
-      <!-- .vertical_line -->
-      <!-- Try -->
-      <section class="contributions">
+      <section class="timeline-responsive">
+        <section class="contributions"></section>
         <div class="opacy_bg_03">
           <div class="container">
             <div class="paddings">
@@ -110,10 +86,10 @@
                 <li class="entry">
                   <label>
                     <span>
-                      OpenShift Origin released - the open source project for OpenShift
+                      OpenShift PaaS launches in developer preview at OpenShift.com
                     </span>
                   </label>
-                  <span class="date">April 2012</span>
+                  <span class="date">May 2011</span>
                   <span class="circle"></span>
                 </li>
                 <li class="entry">
@@ -137,7 +113,7 @@
                 <li class="entry">
                   <label>
                     <span>
-                      Annoucement of third generation platform (V3)
+                      Announced 3rd generation OpenShift platform (v3) & launch of upstream Origin repo.
                     </span>
                   </label>
                   <span class="date">Aug 2014</span>
@@ -147,7 +123,7 @@
                   <label>
                     <span>
                       <a href="#v3">OpenShift V3</a>
-                      integrating Docker, Kubernetes, Project Atomic
+                      general availability.
                     </span>
                   </label>
                   <span class="date">Coming 2015</span>
@@ -158,15 +134,15 @@
           </div>
         </div>
       </section>
-      <div class="row info_title wow fadeInDown" id="try">
-        <i class="fa fa-download right"></i>
+      <div class="info_title wow fadeInDown" id="try">
+        <i class="fa fa-download left"></i>
         <div class="vertical_line">
           <div class="circle_bottom"></div>
         </div>
         <div class="info_vertical animated">
           <h1>
-            Try OpenShift
-            <span>Origin</span>
+            Try Our Current OpenShift
+            <span>Origin v2</span>
           </h1>
         </div>
         <div class="padding_bottom">
@@ -176,7 +152,7 @@
                 <h2>On your network</h2>
                 <p>
                   Want to deploy OpenShift Origin into your network?
-                  <a href="https://install.openshift.com/">install.openshift.com</a>
+                  <a class="strong" href="https://install.openshift.com/">install.openshift.com</a>
                   is your one-stop, one-command deployment utility. Give it a try!
                 </p>
               </div>
@@ -184,7 +160,7 @@
                 <h2>On your laptop</h2>
                 <p>
                   Want to hit the ground running with a pre-built, all-in-one OpenShift system?
-                  <a href="https://mirror.openshift.com/pub/origin-server/release/4/images/openshift-origin.tgz">Download an image</a>
+                  <a class="strong" href="https://mirror.openshift.com/pub/origin-server/release/4/images/openshift-origin.tgz">Download an image</a>
                   suitable for running on a VM. The image will work on
                   <a href="http://www.linux-kvm.org/page/Main_Page">KVM</a>
                   <a href="https://www.virtualbox.org/">VirtualBox</a>,
@@ -205,7 +181,7 @@
                 <h2>Online</h2>
                 <p>
                   You can try out OpenShift for free with OpenShift Online. Just
-                  <a href="https://www.openshift.com/app/account/new">sign up for an OpenShift Online account</a>
+                  <a class="strong" href="https://www.openshift.com/app/account/new">sign up for an OpenShift Online account</a>
                   and create your first application in minutes.
                 </p>
               </div>
@@ -213,241 +189,24 @@
           </div>
         </div>
       </div>
-      <!-- Contribute -->
-      <div class="row info_title wow fadeInUp" id="contribute">
-        <div class="info_vertical animated">
-          <h1>
-            Contribute to OpenShift
-            <span>Origin</span>
-          </h1>
-          <p>We know you've got great ideas for improving OpenShift Origin. So roll up your sleves and come join us in the community.</p>
-        </div>
-        <i class="fa fa-code right"></i>
-        <div class="paddings">
-          <div class="container wow fadeInUp">
-            <div class="row">
-              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                <h2>Extend OpenShift</h2>
-                <p>You can add new runtimes and frameworks to OpenShift with community cartridges and quickstarts.</p>
-                <p>
-                  Cartridges provide fundamental features on OpenShift such as language runtimes and data layers. Community cartridges are contributed and maintained by the OpenShift community.
-                  <a href="http://openshift.github.io/documentation/">Read more about building cartridges.</a>
-                </p>
-                <p>
-                  Quickstarts are codebases built specifically to run on OpenShift with one or more specific cartridges. A good example of a quickstart is the
-                  <a href="https://github.com/openshift/rails-example">Ruby on Rails quickstart</a>.
-                  It already has the appropriate OpenShift environment variables and hooks in place so that you can get started really easily without knowing much specifically about OpenShift. Building a quickstart is pretty easy, and a good place to start extending OpenShift.
-                  <a href="https://openshift.redhat.com/community/developers/get-involved/creating-quickstarts">Read more about building quickstarts.</a>
-                </p>
-              </div>
-              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                <h2>Hack on the source code</h2>
-                <ul>
-                  <li>
-                    Fork the
-                    <a href="https://github.com/openshift/origin-server">origin server</a>
-                    repository.
-                  </li>
-                  <li>
-                    Read the
-                    <a href="https://github.com/openshift/origin-server/blob/master/CONTRIBUTING.md">contributor's guide</a>.
-                  </li>
-                  <li>
-                    Read the
-                    <a href="documentation/">origin documentation</a>.
-                  </li>
-                  <li>
-                    Check out the public backlogs to see what we're working on:
-                    <ul>
-                      <li>
-                        <a href="https://trello.com/b/M0rP0aLj">OpenShift Origin User Interface</a>
-                      </li>
-                      <li>
-                        <a href="https://trello.com/b/qjfQ62lZ">OpenShift Origin Runtime</a>
-                      </li>
-                      <li>
-                        <a href="https://trello.com/b/nbkIrqKa">OpenShift Origin Broker</a>
-                      </li>
-                      <li>
-                        <a href="https://trello.com/b/9jLHsM7K">OpenShift Origin Release Engineering</a>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-                <h3>File a bug</h3>
-                <p>
-                  Found a bug? Let us know! OpenShift uses a
-                  <a href="https://bugzilla.redhat.com/describecomponents.cgi?product=OpenShift%20Origin">public Bugzilla instance</a>.
-                </p>
-                <h3>Talk to us</h3>
-                <ul>
-                  <li>
-                    <a href="http://lists.openshift.redhat.com/openshiftmm/listinfo">Join the public user or development mailing lists.</a>
-                  </li>
-                  <li>
-                    <a href="http://webchat.freenode.net/?randomnick=1&amp;channels=openshift-dev&amp;uio=d4">Join the #openshift-dev channel on Freenode.</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <section class="content_info contributions">
-        <!-- Info resalt -->
+      <section class="content_info latest-news" id="v3">
         <div class="opacy_bg_01 paddings">
           <div class="container">
             <div class="row">
               <div class="col-md-12 text-center">
-                <h2>
-                  Open Source Contributions
-                </h2>
-                <p>
-                  It's about upstream collaboration as much as it's about
-                  <span>platform as a service.</span>
-                </p>
-              </div>
-            </div>
-            <div class="row">
-              <!-- Left Content -->
-              <div class="col-md-9 wow fadeInLeft">
-                <!-- Resul Zone -->
-                <div class="table-responsive">
-                  <table class="table contributions">
-                    <tr>
-                      <th>Open Source Project</th>
-                      <th>Commits in the last 30 days</th>
-                      <th>
-                        Lines of code
-                        <th>Merged Pull Requests in the last 30 days</th>
-                        <th>Closed issues in the last 30 days</th>
-                        <th>Contributors</th>
-                      </th>
-                    </tr>
-                    <tr>
-                      <td>Origin</td>
-                      <td>176</td>
-                      <td>397,557</td>
-                      <td>93</td>
-                      <td>19</td>
-                      <td>31</td>
-                    </tr>
-                    <tr>
-                      <td>Docker</td>
-                      <td>???</td>
-                      <td>???</td>
-                      <td>???</td>
-                      <td>???</td>
-                      <td>???</td>
-                    </tr>
-                    <tr>
-                      <td>Kubernetes</td>
-                      <td>???</td>
-                      <td>???</td>
-                      <td>???</td>
-                      <td>???</td>
-                      <td>???</td>
-                    </tr>
-                    <tr>
-                      <td>Project Atomic</td>
-                      <td>???</td>
-                      <td>???</td>
-                      <td>???</td>
-                      <td>???</td>
-                      <td>???</td>
-                    </tr>
-                  </table>
+                <div class="info_vertical padding_bottom">
+                  <h1>
+                    What's coming next in
+                    <span>OpenShift V3</span>
+                  </h1>
+                  <p>
+                    The
+                    <a href="https://github.com/openshift/origin">source code repo for OpenShift 3</a>
+                    is now available, the first step towards the next version of OpenShift integrating with Docker and the
+                    <a href="https://github.com/GoogleCloudPlatform/kubernetes">Kubernetes container management system</a>.
+                    On top of that, OpenShift will bring the developer and admin workflows that are the heart of platform-as-a-service.
+                  </p>
                 </div>
-              </div>
-              <!-- End Left Content -->
-              <!-- Image animation - Right Content -->
-              <div class="col-md-3 wow fadeInRight">
-                <i class="fa fa-github right"></i>
-              </div>
-              <!-- End Image animation - Right Content -->
-            </div>
-          </div>
-        </div>
-        <!-- End Info resalt -->
-      </section>
-      <!-- End content info - Result Section -->
-      <!-- Info title -->
-      <section class="content_info" id="v3">
-        <div class="row info_title wow fadeInUp" id="tech">
-          <i class="fa fa-cubes left"></i>
-          <div class="vertical_line">
-            <div class="circle_bottom"></div>
-          </div>
-          <div class="info_vertical animated">
-            <h1>
-              Standarization through
-              <span>Containerization</span>
-            </h1>
-            <p>"Standards are powerful forces in the software industry. They can drive technology forward by bringing together the combined efforts of multiple developers, different communities, and even competing vendors."</p>
-          </div>
-          <div class="paddings">
-            <div class="container wow fadeInUp">
-              <div class="row">
-                <div class="col-sm-4 col-md-4">
-                  <div class="technology-section">
-                    <div class="head-tech">
-                      <img alt="Docker logo" class="logo_tech" src="img/logo-docker-h.svg">
-                    </div>
-                    <div class="caption-tech">
-                      <h3>Docker container runtime and image model</h3>
-                      <ul>
-                        <li>Standarized portable containers</li>
-                        <li>for any app, any language,</li>
-                        <li>using any toolchain.</li>
-                      </ul>
-                      <a href="https://www.docker.com/whatisdocker/">Learn more</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-4 col-md-4">
-                  <div class="technology-section">
-                    <div class="head-tech">
-                      <img alt="Kubernetes logo" class="logo_tech" src="img/logo-kubernetes-h.svg">
-                    </div>
-                    <div class="caption-tech">
-                      <h3>Container Orchestration at Scale with Kubernetes.</h3>
-                      <ul>
-                        <li>Providing basic mechanisms for</li>
-                        <li>deployment, maintenance, and scaling</li>
-                        <li>of applications</li>
-                      </ul>
-                      <a href="https://github.com/GoogleCloudPlatform/kubernetes/blob/master/DESIGN.md">Learn more</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-4 col-md-4">
-                  <div class="technology-section">
-                    <div class="head-tech">
-                      <img alt="Project Atomic logo" class="logo_tech" src="img/logo-atomic-h.svg">
-                    </div>
-                    <div class="caption-tech">
-                      <h3>A lean and mean OS built specifically for containers</h3>
-                      <ul>
-                        <li>Harnesses the power of upstream packages</li>
-                        <li>plus the ability to perform</li>
-                        <li>atomic upgrades and rollbacks</li>
-                      </ul>
-                      <a href="http://www.projectatomic.io/docs/">Learn more</a>
-                    </div>
-                  </div>
-                </div>
-                <!-- End Item Service-01 -->
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="content_info latest-news">
-        <div class="opacy_bg_01 paddings">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12 text-center">
-                <h3>What's Coming Next in OpenShift V3</h3>
               </div>
             </div>
             <div class="row">
@@ -512,75 +271,271 @@
         </div>
       </section>
       <section class="content_info">
-        <section class="paddings">
-          <div class="container wow fadeInUp">
-            <div class="row text-center">
-              <div class="service-process">
-                <!-- Step 1 -->
-                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                  <div class="thumbnail">
-                    <div class="caption-head">
-                      <em class="caption-icon fa fa-code icon-big"></em>
-                      <h2 class="caption-title">Develop</h2>
+        <div class="info_title wow fadeInUp" id="tech">
+          <i class="fa fa-cubes left"></i>
+          <div class="vertical_line">
+            <div class="circle_bottom"></div>
+          </div>
+          <div class="info_vertical animated">
+            <h1>
+              Standarization through
+              <span>Containerization</span>
+            </h1>
+            <p>"Standards are powerful forces in the software industry. They can drive technology forward by bringing together the combined efforts of multiple developers, different communities, and even competing vendors."</p>
+          </div>
+          <div class="paddings">
+            <div class="container wow fadeInUp">
+              <div class="row">
+                <div class="col-sm-4 col-md-4">
+                  <div class="technology-section">
+                    <div class="head-tech">
+                      <img alt="Docker logo" class="logo_tech" src="img/logo-docker-h.svg">
+                    </div>
+                    <div class="caption-tech">
+                      <h3>Docker container runtime and image model</h3>
+                      <p>Standarized portable containers for any app, any language, using any toolchain.</p>
+                      <a href="https://www.docker.com/whatisdocker/">Learn more</a>
                     </div>
                   </div>
                 </div>
-                <!-- End Step 1 -->
-                <!-- Step 2 -->
-                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                  <div class="thumbnail">
-                    <div class="caption-head">
-                      <em class="caption-icon fa fa-cogs icon-big"></em>
-                      <h2 class="caption-title">Build</h2>
+                <div class="col-sm-4 col-md-4">
+                  <div class="technology-section">
+                    <div class="head-tech">
+                      <img alt="Kubernetes logo" class="logo_tech" src="img/logo-kubernetes-h.svg">
+                    </div>
+                    <div class="caption-tech">
+                      <h3>Container Orchestration at Scale with Kubernetes.</h3>
+                      <p>Providing basic mechanisms for deployment, maintenance, and scaling of applications</p>
+                      <a href="https://github.com/GoogleCloudPlatform/kubernetes/blob/master/DESIGN.md">Learn more</a>
                     </div>
                   </div>
                 </div>
-                <!-- End Step 2 -->
-                <!-- Step 3 -->
-                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                  <div class="thumbnail">
-                    <div class="caption-head">
-                      <em class="caption-icon fa fa-check-square-o icon-big"></em>
-                      <h2 class="caption-title">Test</h2>
+                <div class="col-sm-4 col-md-4">
+                  <div class="technology-section">
+                    <div class="head-tech">
+                      <img alt="Project Atomic logo" class="logo_tech" src="img/logo-atomic-h.svg">
+                    </div>
+                    <div class="caption-tech">
+                      <h3>A lean and mean OS built specifically for containers</h3>
+                      <p>Harnesses the power of upstream packages plus the ability to perform atomic upgrades and rollbacks</p>
+                      <a href="http://www.projectatomic.io/docs/">Learn more</a>
                     </div>
                   </div>
                 </div>
-                <!-- End Step 3 -->
-                <!-- Step 4 -->
-                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                  <div class="thumbnail">
-                    <div class="caption-head">
-                      <em class="caption-icon fa fa-cloud-upload icon-big"></em>
-                      <h2 class="caption-title">Deploy</h2>
-                    </div>
-                  </div>
-                </div>
-                <!-- End Step 4 -->
-              </div>
-              <div class="col-md-12 single_services">
-                <p class="lead">
-                  OpenShift v3 is being built around the central idea of user applications running in Docker containers with scheduling/management support provided by the Kubernetes project, and augmented deployment, orchestration, and routing functionality built on top.
-                  <a href="https://blog.openshift.com/openshift-v3-deep-dive-docker-kubernetes/">Learn More</a>
-                </p>
+                <!-- End Item Service-01 -->
               </div>
             </div>
           </div>
-        </section>
-        <!-- End Services -->
-        <div class="vertical_line">
-          <div class="circle_top"></div>
         </div>
       </section>
+      <section class="content_info contributions">
+        <div class="opacy_bg_01 paddings">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <div class="info_vertical">
+                  <h1>
+                    Open Source
+                    <span>Contributions</span>
+                  </h1>
+                  <p>
+                    It's about upstream collaboration as much as it's about platform as a service.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <!-- Left Content -->
+              <div class="col-md-9 wow fadeInLeft">
+                <!-- Resul Zone -->
+                <div class="table-responsive">
+                  <table class="table contributions">
+                    <tr>
+                      <th>Open Source Project</th>
+                      <th>Commits in the last 30 days</th>
+                      <th>
+                        Lines of code
+                        <th>Merged Pull Requests in the last 30 days</th>
+                        <th>Closed issues in the last 30 days</th>
+                        <th>Contributors</th>
+                      </th>
+                    </tr>
+                    <tr>
+                      <td>Origin</td>
+                      <td>176</td>
+                      <td>397,557</td>
+                      <td>93</td>
+                      <td>19</td>
+                      <td>31</td>
+                    </tr>
+                    <tr>
+                      <td>Docker</td>
+                      <td>???</td>
+                      <td>???</td>
+                      <td>???</td>
+                      <td>???</td>
+                      <td>???</td>
+                    </tr>
+                    <tr>
+                      <td>Kubernetes</td>
+                      <td>???</td>
+                      <td>???</td>
+                      <td>???</td>
+                      <td>???</td>
+                      <td>???</td>
+                    </tr>
+                    <tr>
+                      <td>Project Atomic</td>
+                      <td>???</td>
+                      <td>???</td>
+                      <td>???</td>
+                      <td>???</td>
+                      <td>???</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <!-- End Left Content -->
+              <!-- Image animation - Right Content -->
+              <div class="col-md-3 wow fadeInRight">
+                <i class="fa fa-github right"></i>
+              </div>
+              <!-- End Image animation - Right Content -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="info_title wow fadeInUp" id="contribute">
+        <div class="vertical_line">
+          <div class="circle_bottom"></div>
+        </div>
+        <div class="info_vertical animated">
+          <h1>
+            Contribute to OpenShift
+            <span>Origin v3</span>
+          </h1>
+          <p>We know you've got great ideas for improving OpenShift Origin. So roll up your sleves and come join us in the community.</p>
+        </div>
+        <i class="fa fa-code right"></i>
+        <div class="paddings">
+          <div class="container wow fadeInUp">
+            <div class="row">
+              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <h2>Contribute to OpenShift v3</h2>
+                <p>We know that you have some good ideas on how to improve things. So role up your sleeves and clone the repo</p>
+                <p>
+                  Cartridges provide fundamental features on OpenShift such as language runtimes and data layers. Community cartridges are contributed and maintained by the OpenShift community.
+                  <a href="http://openshift.github.io/documentation/">Read more about building cartridges.</a>
+                </p>
+                <p>
+                  Quickstarts are codebases built specifically to run on OpenShift with one or more specific cartridges. A good example of a quickstart is the
+                  <a href="https://github.com/openshift/rails-example">Ruby on Rails quickstart</a>.
+                  It already has the appropriate OpenShift environment variables and hooks in place so that you can get started really easily without knowing much specifically about OpenShift. Building a quickstart is pretty easy, and a good place to start extending OpenShift.
+                  <a href="https://openshift.redhat.com/community/developers/get-involved/creating-quickstarts">Read more about building quickstarts.</a>
+                </p>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <h2>Hack on the source code</h2>
+                <ul>
+                  <li>
+                    Fork the
+                    <a href="https://github.com/openshift/origin-server">origin server</a>
+                    repository.
+                  </li>
+                  <li>
+                    Read the
+                    <a href="https://github.com/openshift/origin-server/blob/master/CONTRIBUTING.md">contributor's guide</a>.
+                  </li>
+                  <li>
+                    Read the
+                    <a href="documentation/">origin documentation</a>.
+                  </li>
+                  <li>
+                    Check out the public backlogs to see what we're working on:
+                    <ul>
+                      <li>
+                        <a href="https://trello.com/b/M0rP0aLj">OpenShift Origin User Interface</a>
+                      </li>
+                      <li>
+                        <a href="https://trello.com/b/qjfQ62lZ">OpenShift Origin Runtime</a>
+                      </li>
+                      <li>
+                        <a href="https://trello.com/b/nbkIrqKa">OpenShift Origin Broker</a>
+                      </li>
+                      <li>
+                        <a href="https://trello.com/b/9jLHsM7K">OpenShift Origin Release Engineering</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <h3>File a bug</h3>
+                <p>
+                  Found a bug? Let us know! OpenShift uses a
+                  <a href="https://bugzilla.redhat.com/describecomponents.cgi?product=OpenShift%20Origin">public Bugzilla instance</a>.
+                </p>
+                <h3>Talk to us</h3>
+                <ul>
+                  <li>
+                    <a href="http://lists.openshift.redhat.com/openshiftmm/listinfo">Join the public user or development mailing lists.</a>
+                  </li>
+                  <li>
+                    <a href="http://webchat.freenode.net/?randomnick=1&amp;channels=openshift-dev&amp;uio=d4">Join the #openshift-dev channel on Freenode.</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- %section.content_info -->
+      <!-- .row.info_title.wow.fadeInUp -->
+      <!-- .vertical_line -->
+      <!-- .circle_bottom -->
+      <!-- .info_vertical.animated -->
+      <!-- %h1 -->
+      <!-- Complete Development -->
+      <!-- %span Workflow -->
+      <!-- .container.wow.fadeInUp -->
+      <!-- .row.text-center.padding_bottom -->
+      <!-- .service-process -->
+      <!-- / Step 1 -->
+      <!-- .col-xs-12.col-sm-6.col-md-3.col-lg-3 -->
+      <!-- .thumbnail -->
+      <!-- .caption-head -->
+      <!-- %em.caption-icon.fa.fa-code.icon-big -->
+      <!-- %h2.caption-title Develop -->
+      <!-- / End Step 1 -->
+      <!-- / Step 2 -->
+      <!-- .col-xs-12.col-sm-6.col-md-3.col-lg-3 -->
+      <!-- .thumbnail -->
+      <!-- .caption-head -->
+      <!-- %em.caption-icon.fa.fa-cogs.icon-big -->
+      <!-- %h2.caption-title Build -->
+      <!-- / End Step 2 -->
+      <!-- / Step 3 -->
+      <!-- .col-xs-12.col-sm-6.col-md-3.col-lg-3 -->
+      <!-- .thumbnail -->
+      <!-- .caption-head -->
+      <!-- %em.caption-icon.fa.fa-check-square-o.icon-big -->
+      <!-- %h2.caption-title Test -->
+      <!-- / End Step 3 -->
+      <!-- / Step 4 -->
+      <!-- .col-xs-12.col-sm-6.col-md-3.col-lg-3 -->
+      <!-- .thumbnail -->
+      <!-- .caption-head -->
+      <!-- %em.caption-icon.fa.fa-cloud-upload.icon-big -->
+      <!-- %h2.caption-title Deploy -->
+      <!-- / End Step 4 -->
       <footer>
         <div class="container">
           <div class="row">
             <!-- Social Section -->
-            <div class="col-md-6">
+            <div class="col-md-6 col-sm-12">
               <a href="https://www.redhat.com/">
                 <img alt="Red Hat" src="https://assets.openshift.net/app/assets/redhat.svg">
               </a>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 col-sm-12">
               <ul class="social">
                 <li class="twitter">
                   <a href="https://twitter.com/openshift">
