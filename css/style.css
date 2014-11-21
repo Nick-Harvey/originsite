@@ -1005,6 +1005,9 @@ header .container{
 .image_05_parallax{
 	background: url("../img/parallax/5.jpg");
 }
+.image_06_parallax{
+	background: url("../img/parallax/commons-full.jpg");
+}
 
 .bg_parallax{
   margin: 0 auto;

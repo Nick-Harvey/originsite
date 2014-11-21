@@ -36,6 +36,10 @@ h2, h3 {
 	background-image: url("../img/parallax/twirl-full.jpg");
 }
 
+.image_06_parallax{
+	background-image: url("../img/parallax/commons-full.jpg");
+}
+
 .opacy_bg_02{
   background:rgba(0, 61, 110, 0.34);
   text-shadow: 1px 1px 0 rgba(0,0,0,.5);
@@ -56,7 +60,7 @@ h2, h3 {
 
 .bg_parallax {
 	background-size: initial;
-	z-index: 2;
+	z-ibg-ndex: 2;
 }
 
 .index_static h1 {

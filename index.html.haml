@@ -60,8 +60,8 @@
                     %a{:href => "index.html", :title => "Back to Home"}
                       %img.logo_img{:alt => "Logo", :src => "img/origin_logo.svg"}/
                   %h1.animated.fadeInDown.delay
-                    Establishing the next generation of PaaS through milestones.
-                  %p.animated.fadeInUp.delay Origin Milestone 5 (M5) is built around a core of application containers powered by Docker, with orchestration and management provided by Kubernetes, on a foundation of Atomic and Enterprise Linux. Origin is the community project that brings it all together along with extensions, to accelerate application development and deployment.
+                    Establishing the next generation of PaaS.
+                  %p.animated.fadeInUp.delay OpenShift 3 is built around a core of application containers powered by Docker, with orchestration and management provided by Kubernetes, on a foundation of Atomic and Enterprise Linux. Origin Milestone 5 (M5) is the upstream community project that brings it all together along with extensions, to accelerate application development and deployment.
       %section.timeline-responsive
         %section.contributions
         .opacy_bg_03
@@ -95,8 +95,7 @@
                 %li.entry.spotlight
                   %label
                     %span
-                      %a{:href => "#v3"}OpenShift M5 
-                      general availability.
+                      %a{:href => "#v3"}OpenShift 3 / Origin M5
                   %span.date Coming 2015
                   %span.circle.circle-big
 
@@ -153,19 +152,23 @@
               .col-md-12.text-center
                 .info_vertical.padding_bottom
                   %h1
-                    Origin milestones, grow into new versions of  
-                    %span OpenShift
+                    See whats coming in   
+                    %span OpenShift 3
                   %p
-                    %a{:href => "https://blog.openshift.com/how-we-number-openshift-origin-and-enterprise-releases/"} With each milestone of Origin, comes a new version of OpenShift.
-                    And now that the
-                    %a{:href => "https://github.com/openshift/origin"} source code repo for Origin M5
-                    is available, we're progressing towards a whole new architecture entirely re-engineered from the ground up. Welcome to OpenShift 3, a new architecture integrating 
+                    With each
+                    %a{:href => "https://blog.openshift.com/how-we-number-openshift-origin-and-enterprise-releases/"}  milestone of Origin
+                    comes a new version of OpenShift. And now that the
+                    %a{:href => "https://github.com/openshift/origin"} Origin M5 source code repo
+                    for OpenShift 3 is available, we're progressing towards a whole new architecture entirely re-engineered from the ground up.
+                    This new architecture integrates
                     %a{:href => "http://www.docker.com"}Docker 
                     and the
                     = succeed "." do
-                      %a{:href => "https://github.com/GoogleCloudPlatform/kubernetes"} Kubernetes container management system
-                    On top of all that, OpenShift 3 will be incorporating its effective and efficent admin workflows, that play a critical role in platform-as-a-service.
-
+                      %a{:href => "https://github.com/GoogleCloudPlatform/kubernetes"} Kubernetes 
+                      container orchestration and management system, available on an
+                      %a{:href => "http://www.projectatomic.io/"}Atomic 
+                      host optimized for running containerized applications
+                    On top of all that, OpenShift will incorporate effective and efficient DevOps workflows that play a critical role in platform-as-a-service to accelerate application delivery.
             .row
               .col-md-6
                 :plain
@@ -235,7 +238,7 @@
                     .caption-tech
                       %h3 Container Orchestration at Scale with Kubernetes.
                       %p Providing basic mechanisms for deployment, maintenance, and scaling of applications 
-                      %a{:href => "https://github.com/GoogleCloudPlatform/kubernetes/blob/master/DESIGN.md"} Learn more
+                      %a{:href => "http://kubernetes.io/"} Learn more
 
                 .col-sm-4.col-md-4
                   .technology-section
@@ -266,36 +269,27 @@
                   %table.table.contributions
                     %tr
                       %th Open Source Project
-                      %th Commits in the last 30 days
-                      %th
-                        Lines of code
-                        %th Pull Requests involved in last 30 days
-                        %th Issues involved in last 30 days
-                        %th Contributors
+                      %th Red Hat Commits last 30 days
+                      %th Red Hat Pull Requests last 30 days
+                      %th Issues involved in last 30 days
                     %tr
                       %td
                         %a{:href => "https://github.com/openshift/origin"}Origin
                       %td 176
-                      %td 397,557
                       %td 93
                       %td 19
-                      %td 30+
                     %tr
                       %td 
                         %a{:href => "https://github.com/docker/docker"}Docker
                       %td 49
-                      %td 52,327
                       %td 18
                       %td 1
-                      %td 20+
                     %tr
                       %td
                         %a{:href => "https://github.com/googlecloudplatform/kubernetes"}Kubernetes
                       %td 103
-                      %td 81,735
                       %td 47
                       %td 106
-                      %td 15+
                     -# %tr
                     -#   %td Project Atomic
                     -#   %td ???
@@ -317,7 +311,7 @@
           %h1
             Contribute to OpenShift
             %span Origin
-          %p We know you've got great ideas for improving OpenShift Origin. So roll up your sleves and come join us in the community.  
+          %p We know you've got great ideas for improving OpenShift Origin. So roll up your sleeves and come join us in the community.  
         %i.fa.fa-code.right
         .paddings
           .container.wow.fadeInUp
@@ -333,15 +327,15 @@
                   project at the container runtime layer.
                 %h2 Take a look at the Trello Board
                 %p 
-                  The OpenShift project roadmap lives on 
-                  %a{:href => "https://trello.com/b/nlLwlKoz/openshift-origin-roadmap"} Trello. 
-                  Of particular interest to those who want to get involved with the OpenShift 3 architecture are the following topics:
+                  The OpenShift project
+                  %a{:href => "https://trello.com/b/nlLwlKoz/openshift-origin-roadmap"} roadmap lives on Trello. 
+                  Here is a sampling of topics for those who want to get involved with OpenShift 3:
                   %ul
                     %li 
-                      %a{:href => "https://trello.com/c/uqNIamJi"} Orchestration
+                      %a{:href => "https://trello.com/c/TZPhbN79"} Docker Integration
                   %ul
                     %li 
-                      %a{:href => "https://trello.com/c/ja8bbQwy"} Networking
+                      %a{:href => "https://trello.com/c/ja8bbQwy"} Kubernetes Networking
                   %ul
                     %li
                       %a{:href => "https://trello.com/c/3zHeVSla"} Routing and Load Balancing
@@ -363,7 +357,7 @@
                     Check out the other repositories we're working on:
                     %ul
                       %li
-                        %a{:href => "https://github.com/GoogleCloudPlatform/kubernetes"} Google Kubernetes
+                        %a{:href => "https://github.com/GoogleCloudPlatform/kubernetes"} Google 
                       %li
                         %a{:href => "https://github.com/docker/docker"} Docker
                       %li
@@ -378,50 +372,8 @@
                   %li
                     %a{:href => "http://lists.openshift.redhat.com/openshiftmm/listinfo"} Join the public user or development mailing lists.
                   %li
-                    %a{:href => "http://webchat.freenode.net/?randomnick=1&channels=openshift-dev&uio=d4"} Join the #openshift-dev channel on Freenode.
-
-      
-
-      / %section.content_info
-      /   .row.info_title.wow.fadeInUp
-      /     .vertical_line
-      /       .circle_bottom
-      /     .info_vertical.animated
-      /       %h1
-      /         Complete Development
-      /         %span Workflow
-      /     .container.wow.fadeInUp
-      /       .row.text-center.padding_bottom
-      /         .service-process
-      /           / Step 1
-      /           .col-xs-12.col-sm-6.col-md-3.col-lg-3
-      /             .thumbnail
-      /               .caption-head
-      /                 %em.caption-icon.fa.fa-code.icon-big
-      /                 %h2.caption-title Develop
-      /           / End Step 1
-      /           / Step 2
-      /           .col-xs-12.col-sm-6.col-md-3.col-lg-3
-      /             .thumbnail
-      /               .caption-head
-      /                 %em.caption-icon.fa.fa-cogs.icon-big
-      /                 %h2.caption-title Build
-      /           / End Step 2
-      /           / Step 3
-      /           .col-xs-12.col-sm-6.col-md-3.col-lg-3
-      /             .thumbnail
-      /               .caption-head
-      /                 %em.caption-icon.fa.fa-check-square-o.icon-big
-      /                 %h2.caption-title Test
-      /           / End Step 3
-      /           / Step 4
-      /           .col-xs-12.col-sm-6.col-md-3.col-lg-3
-      /             .thumbnail
-      /               .caption-head
-      /                 %em.caption-icon.fa.fa-cloud-upload.icon-big
-      /                 %h2.caption-title Deploy
-      /           / End Step 4
-
+                    %a{:href => "http://webchat.freenode.net/?randomnick=1&channels=openshift-dev&uio=d4"} Join the #openshift-dev channel on Freenode
+      /footer              
       %footer
         .container
           .row
